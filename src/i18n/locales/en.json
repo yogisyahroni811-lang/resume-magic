@@ -212,18 +212,20 @@
           "modelId": "Gemini Model ID"
         },
         "custom": {
-          "title": "Custom AI Provider",
-          "description": "Configure any AI provider with OpenAI-compatible API",
+          "title": "AI Configuration",
+          "description": "Connect your preferred AI provider — 10+ providers supported",
           "apiKey": "API Key",
-          "modelId": "Model ID",
-          "apiEndpoint": "API Base URL",
-          "endpointHint": "API base URL (e.g., https://api.openai.com or http://localhost:11434)",
-          "providerName": "Provider Name",
-          "quickPresets": "Quick Presets",
-          "advanced": "Advanced Settings",
-          "advancedHint": "These settings are automatically configured based on your provider.",
-          "configured": "✓ Provider configured and ready to use",
-          "notConfigured": "⚠ Please fill in all fields to enable AI features"
+          "model": "Model",
+          "provider": "AI Provider",
+          "customBaseUrl": "Custom Base URL",
+          "maxTokens": "Max Tokens",
+          "temperature": "Temperature",
+          "saveConfiguration": "Save Configuration",
+          "removeKey": "Remove Key",
+          "keySaved": "Key saved",
+          "connected": "Connected",
+          "connectedTo": "Connected to",
+          "notConfigured": "Not configured"
         }
       }
     },
