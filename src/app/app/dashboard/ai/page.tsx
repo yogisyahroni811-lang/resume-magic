@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Check, Wrench, Eye, EyeOff, AlertCircle, Trash2, Loader2 } from "lucide-react";
+import { Check, Wrench, Eye, EyeOff, AlertCircle, Trash2, Loader2, ChevronDown } from "lucide-react";
 import { useTranslations } from "@/i18n/compat/client";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -155,23 +155,45 @@ const AISettingsPage = () => {
             <Label className="text-sm font-medium">
               {t("dashboard.settings.ai.custom.model") || "Model"}
             </Label>
-            {availableModels.length > 0 ? (
+
+            {/* Model Dropdown with Custom Option */}
+            <div className="relative">
               <select
                 value={model}
-                onChange={(e) => setModel(e.target.value)}
-                className="w-full h-10 px-3 py-2 rounded-md border border-input bg-background text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+                onChange={(e) => {
+                  if (e.target.value === "__custom__") {
+                    setModel("");
+                  } else {
+                    setModel(e.target.value);
+                  }
+                }}
+                className="w-full h-10 px-3 py-2 rounded-md border border-input bg-background text-sm focus:outline-none focus:ring-2 focus:ring-ring appearance-none"
               >
                 {availableModels.map(m => (
                   <option key={m} value={m}>{m}</option>
                 ))}
+                <option value="__custom__">✏️ Custom Model...</option>
               </select>
-            ) : (
-              <Input
-                value={model}
-                onChange={(e) => setModel(e.target.value)}
-                placeholder="e.g., gpt-4o, claude-3-sonnet"
-                className="h-10"
-              />
+              <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 pointer-events-none text-muted-foreground" />
+            </div>
+
+            {/* Custom Model Input (shown when "Custom Model" selected) */}
+            {model === "" && (
+              <div className="flex gap-2">
+                <Input
+                  value={model}
+                  onChange={(e) => setModel(e.target.value)}
+                  placeholder="Type custom model ID..."
+                  className="h-10 flex-1"
+                  autoFocus
+                />
+                <Button
+                  size="sm"
+                  className="h-10 px-4"
+                >
+                  Set
+                </Button>
+              </div>
             )}
           </div>
         </div>
