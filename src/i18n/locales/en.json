@@ -210,6 +210,14 @@
           "description": "Supports polish, grammar check, and PDF image resume import. Recommended model: gemini-flash-latest",
           "apiKey": "Gemini API Key",
           "modelId": "Gemini Model ID"
+        },
+        "custom": {
+          "title": "Custom Provider",
+          "description": "Configure any OpenAI-compatible API endpoint",
+          "apiKey": "API Key",
+          "modelId": "Model ID",
+          "apiEndpoint": "API Endpoint (e.g., https://api.example.com/v1)",
+          "providerName": "Provider Name (optional)"
         }
       }
     },

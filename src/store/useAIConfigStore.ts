@@ -13,6 +13,10 @@ interface AIConfigState {
   openaiApiEndpoint: string;
   geminiApiKey: string;
   geminiModelId: string;
+  customProviderName: string;
+  customApiKey: string;
+  customApiEndpoint: string;
+  customModelId: string;
   setSelectedModel: (model: AIModelType) => void;
   setDoubaoApiKey: (apiKey: string) => void;
   setDoubaoModelId: (modelId: string) => void;
@@ -23,6 +27,10 @@ interface AIConfigState {
   setOpenaiApiEndpoint: (endpoint: string) => void;
   setGeminiApiKey: (apiKey: string) => void;
   setGeminiModelId: (modelId: string) => void;
+  setCustomProviderName: (name: string) => void;
+  setCustomApiKey: (apiKey: string) => void;
+  setCustomApiEndpoint: (endpoint: string) => void;
+  setCustomModelId: (modelId: string) => void;
   isConfigured: () => boolean;
 }
 
@@ -39,24 +47,36 @@ export const useAIConfigStore = create<AIConfigState>()(
       openaiApiEndpoint: "",
       geminiApiKey: "",
       geminiModelId: "gemini-flash-latest",
+      customProviderName: "",
+      customApiKey: "",
+      customApiEndpoint: "",
+      customModelId: "",
       setSelectedModel: (model: AIModelType) => set({ selectedModel: model }),
       setDoubaoApiKey: (apiKey: string) => set({ doubaoApiKey: apiKey }),
       setDoubaoModelId: (modelId: string) => set({ doubaoModelId: modelId }),
       setDeepseekApiKey: (apiKey: string) => set({ deepseekApiKey: apiKey }),
-      setDeepseekModelId: (modelId: string) => set({ deepseekModelId: modelId }),
+      setDeepseekModelId: (modelId: string) =>
+        set({ deepseekModelId: modelId }),
       setOpenaiApiKey: (apiKey: string) => set({ openaiApiKey: apiKey }),
       setOpenaiModelId: (modelId: string) => set({ openaiModelId: modelId }),
-      setOpenaiApiEndpoint: (endpoint: string) => set({ openaiApiEndpoint: endpoint }),
+      setOpenaiApiEndpoint: (endpoint: string) =>
+        set({ openaiApiEndpoint: endpoint }),
       setGeminiApiKey: (apiKey: string) => set({ geminiApiKey: apiKey }),
       setGeminiModelId: (modelId: string) => set({ geminiModelId: modelId }),
+      setCustomProviderName: (name: string) =>
+        set({ customProviderName: name }),
+      setCustomApiKey: (apiKey: string) => set({ customApiKey: apiKey }),
+      setCustomApiEndpoint: (endpoint: string) =>
+        set({ customApiEndpoint: endpoint }),
+      setCustomModelId: (modelId: string) => set({ customModelId: modelId }),
       isConfigured: () => {
         const state = get();
         const config = AI_MODEL_CONFIGS[state.selectedModel];
         return config.validate(state);
-      }
+      },
     }),
     {
-      name: "ai-config-storage"
-    }
-  )
+      name: "ai-config-storage",
+    },
+  ),
 );

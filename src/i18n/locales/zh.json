@@ -211,6 +211,14 @@
           "description": "支持润色、语法检查和 PDF 图片识别导入。推荐模型 ID：gemini-flash-latest",
           "apiKey": "Gemini API Key",
           "modelId": "Gemini 模型 ID"
+        },
+        "custom": {
+          "title": "自定义服务",
+          "description": "配置任何兼容 OpenAI 格式的 API 端点",
+          "apiKey": "API Key",
+          "modelId": "模型 ID",
+          "apiEndpoint": "API 端点（如：https://api.example.com/v1）",
+          "providerName": "服务名称（可选）"
         }
       }
     },

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Check, ExternalLink, Sparkles } from "lucide-react";
+import { Check, ExternalLink, Sparkles, Wrench } from "lucide-react";
 import { useTranslations } from "@/i18n/compat/client";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -19,6 +19,10 @@ const AISettingsPage = () => {
     openaiApiEndpoint,
     geminiApiKey,
     geminiModelId,
+    customProviderName,
+    customApiKey,
+    customApiEndpoint,
+    customModelId,
     setDoubaoApiKey,
     setDoubaoModelId,
     setDeepseekApiKey,
@@ -27,6 +31,10 @@ const AISettingsPage = () => {
     setOpenaiApiEndpoint,
     setGeminiApiKey,
     setGeminiModelId,
+    setCustomProviderName,
+    setCustomApiKey,
+    setCustomApiEndpoint,
+    setCustomModelId,
     selectedModel,
     setSelectedModel,
   } = useAIConfigStore();
@@ -40,7 +48,7 @@ const AISettingsPage = () => {
 
   const handleApiKeyChange = async (
     e: React.ChangeEvent<HTMLInputElement>,
-    type: "doubao" | "deepseek" | "openai" | "gemini"
+    type: "doubao" | "deepseek" | "openai" | "gemini" | "custom"
   ) => {
     const newApiKey = e.target.value;
     if (type === "doubao") {
@@ -49,6 +57,8 @@ const AISettingsPage = () => {
       setDeepseekApiKey(newApiKey);
     } else if (type === "gemini") {
       setGeminiApiKey(newApiKey);
+    } else if (type === "custom") {
+      setCustomApiKey(newApiKey);
     } else {
       setOpenaiApiKey(newApiKey);
     }
@@ -56,7 +66,7 @@ const AISettingsPage = () => {
 
   const handleModelIdChange = async (
     e: React.ChangeEvent<HTMLInputElement>,
-    type: "doubao" | "deepseek" | "openai" | "gemini"
+    type: "doubao" | "deepseek" | "openai" | "gemini" | "custom"
   ) => {
     const newModelId = e.target.value;
     if (type === "doubao") {
@@ -65,16 +75,20 @@ const AISettingsPage = () => {
       setOpenaiModelId(newModelId);
     } else if (type === "gemini") {
       setGeminiModelId(newModelId);
+    } else if (type === "custom") {
+      setCustomModelId(newModelId);
     }
   };
 
   const handleApiEndpointChange = async (
     e: React.ChangeEvent<HTMLInputElement>,
-    type: "openai"
+    type: "openai" | "custom"
   ) => {
     const newApiEndpoint = e.target.value;
     if (type === "openai") {
       setOpenaiApiEndpoint(newApiEndpoint);
+    } else if (type === "custom") {
+      setCustomApiEndpoint(newApiEndpoint);
     }
   };
 
@@ -119,6 +133,16 @@ const AISettingsPage = () => {
       bgColor: "bg-amber-50 dark:bg-amber-950/50",
       isConfigured: !!(geminiApiKey && geminiModelId),
     },
+    {
+      id: "custom",
+      name: t("dashboard.settings.ai.custom.title") || "Custom Provider",
+      description: t("dashboard.settings.ai.custom.description") || "Configure any OpenAI-compatible API endpoint",
+      icon: Wrench,
+      link: "#",
+      color: "text-green-500",
+      bgColor: "bg-green-50 dark:bg-green-950/50",
+      isConfigured: !!(customApiKey && customApiEndpoint && customModelId),
+    },
   ];
 
   return (
@@ -150,9 +174,9 @@ const AISettingsPage = () => {
                       "shrink-0",
                       isViewing ? "text-primary" : "text-muted-foreground"
                     )}
-                    >
-                      <Icon className="h-5 w-5" />
-                    </div>
+                  >
+                    <Icon className="h-5 w-5" />
+                  </div>
                   <div className="flex-1 min-w-0 flex flex-col items-start">
                     <span
                       className={cn(
@@ -173,10 +197,10 @@ const AISettingsPage = () => {
                     aria-label={`Select ${model.name}`}
                     onClick={() => {
                       setSelectedModel(
-                        model.id as "doubao" | "deepseek" | "openai" | "gemini"
+                        model.id as "doubao" | "deepseek" | "openai" | "gemini" | "custom"
                       );
                       setCurrentModel(
-                        model.id as "doubao" | "deepseek" | "openai" | "gemini"
+                        model.id as "doubao" | "deepseek" | "openai" | "gemini" | "custom"
                       );
                     }}
                     className={cn(
@@ -233,15 +257,17 @@ const AISettingsPage = () => {
                           model.id === "doubao"
                             ? doubaoApiKey
                             : model.id === "openai"
-                            ? openaiApiKey
-                            : model.id === "gemini"
-                            ? geminiApiKey
-                            : deepseekApiKey
+                              ? openaiApiKey
+                              : model.id === "gemini"
+                                ? geminiApiKey
+                                : model.id === "custom"
+                                  ? customApiKey
+                                  : deepseekApiKey
                         }
                         onChange={(e) =>
                           handleApiKeyChange(
                             e,
-                            model.id as "doubao" | "deepseek" | "openai" | "gemini"
+                            model.id as "doubao" | "deepseek" | "openai" | "gemini" | "custom"
                           )
                         }
                         type="password"
@@ -337,6 +363,61 @@ const AISettingsPage = () => {
                           )}
                         />
                       </div>
+                    )}
+
+                    {model.id === "custom" && (
+                      <>
+                        <div className="space-y-4">
+                          <Label className="text-base font-medium">
+                            {t("dashboard.settings.ai.custom.providerName")}
+                          </Label>
+                          <Input
+                            value={customProviderName}
+                            onChange={(e) => setCustomProviderName(e.target.value)}
+                            placeholder="My AI Provider"
+                            className={cn(
+                              "h-11",
+                              "bg-white dark:bg-gray-900",
+                              "border-gray-200 dark:border-gray-800",
+                              "focus:ring-2 focus:ring-primary/20"
+                            )}
+                          />
+                        </div>
+
+                        <div className="space-y-4">
+                          <Label className="text-base font-medium">
+                            {t("dashboard.settings.ai.custom.apiEndpoint")}
+                          </Label>
+                          <Input
+                            value={customApiEndpoint}
+                            onChange={(e) => handleApiEndpointChange(e, "custom")}
+                            placeholder="https://api.example.com/v1"
+                            className={cn(
+                              "h-11",
+                              "bg-white dark:bg-gray-900",
+                              "border-gray-200 dark:border-gray-800",
+                              "focus:ring-2 focus:ring-primary/20"
+                            )}
+                          />
+                        </div>
+
+                        <div className="space-y-4">
+                          <Label className="text-base font-medium">
+                            {t("dashboard.settings.ai.custom.modelId")}
+                          </Label>
+                          <Input
+                            value={customModelId}
+                            onChange={(e) => handleModelIdChange(e, "custom")}
+                            placeholder="gpt-4, claude-3, etc."
+                            className={cn(
+                              "h-11",
+                              "bg-white dark:bg-gray-900",
+                              "border-gray-200 dark:border-gray-800",
+                              "focus:ring-2 focus:ring-primary/20"
+                            )}
+                          />
+                        </div>
+                      </>
                     )}
                   </div>
                 </div>

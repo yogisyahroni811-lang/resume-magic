@@ -1,4 +1,9 @@
-export type AIModelType = "doubao" | "deepseek" | "openai" | "gemini";
+export type AIModelType =
+  | "doubao"
+  | "deepseek"
+  | "openai"
+  | "gemini"
+  | "custom";
 
 export interface AIValidationContext {
   doubaoApiKey?: string;
@@ -10,6 +15,10 @@ export interface AIValidationContext {
   openaiApiEndpoint?: string;
   geminiApiKey?: string;
   geminiModelId?: string;
+  customProviderName?: string;
+  customApiKey?: string;
+  customApiEndpoint?: string;
+  customModelId?: string;
 }
 
 export interface AIModelConfig {
@@ -28,7 +37,8 @@ export const AI_MODEL_CONFIGS: Record<AIModelType, AIModelConfig> = {
       "Content-Type": "application/json",
       Authorization: `Bearer ${apiKey}`,
     }),
-    validate: (context: AIValidationContext) => !!(context.doubaoApiKey && context.doubaoModelId),
+    validate: (context: AIValidationContext) =>
+      !!(context.doubaoApiKey && context.doubaoModelId),
   },
   deepseek: {
     url: () => "https://api.deepseek.com/v1/chat/completions",
@@ -47,7 +57,12 @@ export const AI_MODEL_CONFIGS: Record<AIModelType, AIModelConfig> = {
       "Content-Type": "application/json",
       Authorization: `Bearer ${apiKey}`,
     }),
-    validate: (context: AIValidationContext) => !!(context.openaiApiKey && context.openaiModelId && context.openaiApiEndpoint),
+    validate: (context: AIValidationContext) =>
+      !!(
+        context.openaiApiKey &&
+        context.openaiModelId &&
+        context.openaiApiEndpoint
+      ),
   },
   gemini: {
     url: () => "https://generativelanguage.googleapis.com/v1beta",
@@ -56,6 +71,21 @@ export const AI_MODEL_CONFIGS: Record<AIModelType, AIModelConfig> = {
       "Content-Type": "application/json",
       "x-goog-api-key": apiKey,
     }),
-    validate: (context: AIValidationContext) => !!(context.geminiApiKey && context.geminiModelId),
+    validate: (context: AIValidationContext) =>
+      !!(context.geminiApiKey && context.geminiModelId),
+  },
+  custom: {
+    url: (endpoint?: string) => `${endpoint || ""}/chat/completions`,
+    requiresModelId: true,
+    headers: (apiKey: string) => ({
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${apiKey}`,
+    }),
+    validate: (context: AIValidationContext) =>
+      !!(
+        context.customApiKey &&
+        context.customApiEndpoint &&
+        context.customModelId
+      ),
   },
 };
