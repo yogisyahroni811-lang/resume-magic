@@ -1,13 +1,19 @@
 {
   "buildCommand": "vite build",
-  "outputDirectory": "dist",
+  "outputDirectory": "dist/client",
   "devCommand": "vite dev",
   "installCommand": "pnpm install",
-  "framework": "vite",
+  "functions": {
+    "api/index.mjs": {
+      "runtime": "nodejs20.x",
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  },
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/api/index.mjs"
     }
   ],
   "regions": ["sin1"],
