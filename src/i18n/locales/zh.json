@@ -1,822 +1,821 @@
 {
   "common": {
-    "title": "魔方简历",
-    "subtitle": "AI 驱动简历编辑器",
-    "description": "魔方简历是一款开源的简历编辑器，免费，隐私优先。无需注册登录，数据完全存储在本地，支持数据导出备份，确保您的简历数据随时可用。",
-    "dashboard": "仪表盘",
-    "edit": "编辑",
-    "delete": "删除",
-    "newResume": "新建简历",
-    "copy": "复制",
-    "cancel": "取消",
-    "confirm": "确认",
-    "deleteSuccess": "删除成功",
-    "deleteModuleConfirm": "确定要删除此模块吗？此操作无法撤销。",
-    "configured": "已配置",
-    "notConfigured": "未配置"
+    "title": "Resume Kubus Rubik",
+    "subtitle": "Editor Resume Berbasis AI",
+    "description": "Resume Kubus Rubik adalah editor resume open-source, gratis, mengutamakan privasi. Tidak perlu registrasi, data tersimpan sepenuhnya di lokal, mendukung ekspor dan backup data, memastikan data resume Anda selalu tersedia.",
+    "dashboard": "Dasbor",
+    "edit": "Edit",
+    "delete": "Hapus",
+    "newResume": "Resume Baru",
+    "copy": "Salin",
+    "cancel": "Batal",
+    "confirm": "Konfirmasi",
+    "deleteSuccess": "Berhasil dihapus",
+    "deleteModuleConfirm": "Yakin ingin menghapus modul ini? Tindakan ini tidak dapat dibatalkan.",
+    "configured": "Sudah dikonfigurasi",
+    "notConfigured": "Belum dikonfigurasi"
   },
   "home": {
     "header": {
-      "title": "魔方简历",
-      "startButton": "开始使用",
-      "features": "功能特点",
-      "pricing": "定价",
-      "about": "关于我们",
-      "login": "登录",
-      "register": "注册",
-      "dashboard": "控制台"
+      "title": "Resume Kubus Rubik",
+      "startButton": "Mulai",
+      "features": "Fitur",
+      "pricing": "Harga",
+      "about": "Tentang",
+      "login": "Masuk",
+      "register": "Daftar",
+      "dashboard": "Dasbor"
     },
     "hero": {
-      "badge": "免费简历制作",
-      "title": "让简历制作变得简单而智能",
-      "subtitle": "魔方简历利用 AI 技术，帮助您快速创建专业的简历。无需注册，免费使用，数据安全存储。",
-      "cta": "立即开始",
-      "secondary": "浏览模板"
+      "badge": "Pembuatan Resume Gratis",
+      "title": "Buat Pembuatan Resume Jadi Mudah dan Pintar",
+      "subtitle": "Resume Kubus Rubik menggunakan teknologi AI untuk membantu Anda membuat resume profesional dengan cepat. Tanpa registrasi, gratis digunakan, data tersimpan dengan aman.",
+      "cta": "Mulai Sekarang",
+      "secondary": "Lihat Template"
     },
     "features": {
-      "title": "为什么选择魔方简历？",
-      "subtitle": "我们提供一站式简历解决方案，让您的求职之路更加顺畅",
+      "title": "Kenapa Pilih Resume Kubus Rubik?",
+      "subtitle": "Kami menyediakan solusi resume all-in-one untuk membuat perjalanan pencarian kerja Anda lebih lancar",
       "ai": {
-        "badge": "AI 驱动",
-        "title": "智能识别，专业建议",
-        "description": "内置智能语法检查，自动识别不恰当的表达，提供专业的修改建议，让您的简历更加出色。",
-        "item1": "智能润色",
-        "item1_description": "AI 自动优化文案表达，让简历更专业",
-        "item2": "语法检查",
-        "item2_description": "自动检测并修正语法和拼写错误"
+        "badge": "AI Cerdas",
+        "title": "Deteksi Cerdas, Saran Profesional",
+        "description": "Pemeriksaan tata bahasa cerdas bawaan, otomatis mengidentifikasi ekspresi yang tidak tepat, memberikan saran modifikasi profesional, membuat resume Anda lebih menonjol.",
+        "item1": "Optimasi cerdas",
+        "item1_description": "AI secara otomatis mengoptimalkan ekspresi konten, membuat resume Anda lebih profesional",
+        "item2": "Pemeriksaan tata bahasa",
+        "item2_description": "Otomatis mendeteksi dan memperbaiki kesalahan tata bahasa dan ejaan"
       },
       "storage": {
-        "badge": "隐私安全",
-        "title": "数据安全，隐私优先",
-        "description": "所有简历数据完全存储在您的本地设备中，无需担心隐私泄露。支持数据导出备份，确保您的简历数据随时可用。",
-        "item1": "本地文件存储",
-        "item1_description": "简历数据安全存储在您的电脑硬盘中",
-        "item2": "多种导出格式",
-        "item2_description": "支持PDF和JSON格式导出",
-        "item3": "支持数据导出备份"
+        "badge": "Penyimpanan Lokal",
+        "title": "Keamanan Data, Privasi Utama",
+        "description": "Semua data resume sepenuhnya tersimpan di perangkat lokal Anda, tidak perlu khawatir tentang kebocoran privasi. Mendukung backup ekspor data, memastikan data resume Anda selalu tersedia.",
+        "item1": "Penyimpanan file lokal",
+        "item1_description": "Data resume tersimpan dengan aman di hard disk komputer Anda",
+        "item2": "Berbagai format ekspor",
+        "item2_description": "Mendukung ekspor format PDF dan JSON",
+        "item3": "Mendukung backup ekspor data"
       },
       "preview": {
-        "badge": "实时预览",
-        "title": "所见即所得",
-        "description": "边编辑边预览，实时查看简历效果。支持多种专业模板，让您的简历既美观又规范。快速导出PDF，随时投递简历。",
-        "item1": "实时预览编辑效果",
-        "item2": "多种导出格式支持"
+        "badge": "Pratinjau Real-time",
+        "title": "Apa yang Anda Lihat Adalah Apa yang Anda Dapatkan",
+        "description": "Edit sambil melihat pratinjau, lihat efek resume secara real-time. Mendukung berbagai template profesional, membuat resume Anda cantik dan standar. Ekspor PDF cepat, kirim resume kapan saja.",
+        "item1": "Pratinjau efek edit real-time",
+        "item2": "Dukungan berbagai format ekspor"
       }
     },
     "news": {
-      "label": "新闻",
-      "content": " 全新的 AI 简历优化功能已上线"
+      "label": "Berita",
+      "content": "Fitur Optimasi Resume AI Baru Telah Live"
     },
     "cta": {
-      "title": "开启你的新职业篇章",
-      "description": "立即使用魔方简历，创建一份令人印象深刻的简历",
-      "button": "免费开始使用"
+      "title": "Mulai Bab Karier Baru Anda",
+      "description": "Mulai gunakan Resume Kubus Rubik sekarang untuk membuat resume yang mengesankan",
+      "button": "Mulai Gratis"
     },
     "footer": {
-      "copyright": " 2025 魔方简历. 保留所有权利."
+      "copyright": " 2025 Resume Kubus Rubik. Semua hak dilindungi."
     },
-    "changelog": "更新日志",
+    "changelog": "Log Perubahan",
     "faq": {
-      "title": "常见问题",
+      "title": "Pertanyaan Umum",
       "items": [
         {
-          "question": "使用魔方简历需要付费吗？",
-          "answer": "魔方简历目前是免费的，满足基础简历制作需求，开源版本的功能不会变更，导出PDF功能也永远不会收费。"
+          "question": "Apakah Resume Kubus Rubik gratis digunakan?",
+          "answer": "Resume Kubus Rubik saat ini gratis, memenuhi kebutuhan pembuatan resume dasar. Fitur versi open-source tidak akan berubah, dan fitur ekspor PDF akan selalu gratis."
         },
         {
-          "question": "我的简历数据安全吗？",
-          "answer": "是的，非常安全。魔方简历采用本地存储方式，您的所有数据都保存在您自己的设备上，不存在云存储，完全保护您的隐私。"
+          "question": "Apakah data resume saya aman?",
+          "answer": "Ya, sangat aman. Resume Kubus Rubik menggunakan penyimpanan lokal, yang berarti semua data Anda disimpan di perangkat Anda sendiri tanpa penyimpanan cloud, menjamin perlindungan privasi sepenuhnya."
         },
         {
-          "question": "支持哪些简历格式导出？",
-          "answer": "目前支持导出PDF格式，确保您的简历在任何设备上都能保持一致的排版效果。未来我们还将支持更多导出格式。"
+          "question": "Format ekspor apa saja yang didukung?",
+          "answer": "Kami saat ini mendukung ekspor PDF, memastikan resume Anda mempertahankan format konsisten di perangkat apa pun. Kami berencana mendukung lebih banyak format ekspor di masa depan."
         },
         {
-          "question": "多设备如何同步",
-          "answer": "我们提供了导出JSON配置，您可以将简历的配置以JSON格式保存，随时随地，任何设备上都可以打开查看。"
+          "question": "Bagaimana cara sinkronisasi antar perangkat?",
+          "answer": "Kami menyediakan ekspor konfigurasi JSON, memungkinkan Anda menyimpan pengaturan resume dalam format JSON, dapat diakses kapan saja, di mana saja, di perangkat apa pun."
         },
         {
-          "question": "自定义程度如何？",
-          "answer": "我们提供丰富的自定义操作，包括颜色、布局等，让您能够根据个人喜好和行业特点调整简历风格。"
+          "question": "Seberapa dapat dikustomisasi?",
+          "answer": "Kami menawarkan kustomisasi yang kaya, termasuk warna, layout, dan lainnya, memungkinkan Anda menyesuaikan gaya resume sesuai preferensi pribadi dan persyaratan industri."
         }
       ]
     }
   },
   "dashboard": {
     "sidebar": {
-      "appName": "魔方简历",
-      "resumes": "我的简历",
-      "settings": "通用设置",
-      "templates": "简历模板",
-      "ai": "AI服务商"
+      "appName": "Resume Kubus Rubik",
+      "resumes": "Riwayat hidup saya",
+      "settings": "Pengaturan Umum",
+      "templates": "Templat Resume",
+      "ai": "Penyedia layanan AI"
     },
     "resumes": {
-      "created": "创建于",
-      "synced": "已备份文件夹",
-      "view": "去查看",
-      "myResume": "我的简历",
-      "create": "新建简历",
-      "newResume": "新建简历",
-      "newResumeDescription": "创建一个新简历以开始。",
-      "import": "导入简历",
-      "untitled": "未命名简历",
-      "importSuccess": "配置导入成功",
-      "importError": "配置导入失败，请检查文件格式",
+      "created": "Dibuat pada",
+      "synced": "Folder backup tersinkron",
+      "view": "Lihat",
+      "myResume": "Resume Saya",
+      "create": "Buat Resume",
+      "newResume": "Resume Baru",
+      "newResumeDescription": "Buat resume baru untuk memulai.",
+      "import": "Impor Resume",
+      "untitled": "Resume Tanpa Judul",
+      "importSuccess": "Impor konfigurasi berhasil",
+      "importError": "Impor konfigurasi gagal, periksa format file",
       "importDialog": {
-        "title": "导入简历",
-        "jsonTitle": "导入 JSON",
-        "jsonDescription": "导入已导出的简历配置文件（.json）",
-        "pdfTitle": "导入 PDF",
-        "pdfDescription": "使用 Gemini 自动识别生成简历结构",
-        "importing": "正在导入，请稍候...",
-        "geminiConfigRequired": "请先在 AI 服务商设置页配置 Gemini API Key 和模型 ID",
-        "pdfSuccess": "PDF 导入成功",
-        "pdfError": "PDF 导入失败，请检查 PDF 内容或 Gemini 配置"
+        "title": "Impor Resume",
+        "jsonTitle": "Impor JSON",
+        "jsonDescription": "Impor file konfigurasi resume yang telah diekspor (.json)",
+        "pdfTitle": "Impor PDF",
+        "pdfDescription": "Gunakan AI untuk mengenali dan membuat struktur resume secara otomatis",
+        "importing": "Sedang mengimpor, tunggu sebentar...",
+        "geminiConfigRequired": "Harap konfigurasi API Key dan Model ID di halaman Pengaturan Penyedia Layanan AI terlebih dahulu",
+        "pdfSuccess": "Impor PDF berhasil",
+        "pdfError": "Impor PDF gagal, periksa konten PDF atau konfigurasi Gemini"
       },
       "notice": {
-        "title": "注意",
-        "description": "建议在设置里中配置简历备份文件夹，防止您的数据可能会在浏览器清除缓存后丢失",
-        "goToSettings": "前往设置"
+        "title": "Perhatian",
+        "description": "Disarankan untuk mengkonfigurasi folder backup resume di Pengaturan untuk mencegah data Anda hilang setelah browser membersihkan cache",
+        "goToSettings": "Ke Pengaturan"
       },
-      "deleteConfirmTitle": "确认删除简历？",
-      "deleteConfirmDescription": "此操作无法撤销。这将永久删除此简历，并从设备中移除数据。",
+      "deleteConfirmTitle": "Yakin hapus resume?",
+      "deleteConfirmDescription": "Tindakan ini tidak dapat dibatalkan. Ini akan menghapus resume secara permanen dan menghapus data dari perangkat.",
       "createDialog": {
-        "title": "新建简历",
-        "description": "从空白模板开始创建新简历",
+        "title": "Buat Resume Baru",
+        "description": "Mulai buat dari template kosong",
         "tabs": {
-          "fromTemplate": "从模板创建",
-          "uploadFile": "上传文件"
+          "fromTemplate": "Buat dari Template",
+          "uploadFile": "Upload File"
         },
-        "namePlaceholder": "姓名",
-        "switchTemplate": "切换模板",
-        "cancel": "取消",
-        "create": "创建",
-        "blankTitle": "空白简历",
-        "startFromBlank": "从空白开始",
-        "startFromTemplate": "从模板开始",
-        "blankCardDescription": "从内置默认模板创建，空白开始",
-        "blankThumbnailDescription": "一张白纸，不受任何预设干扰，自由发挥您的创意，打造完全属于您个人风格的代码级简历",
-        "createNow": "立即创建",
-        "backToGrid": "返回模板列表",
-        "blankPreviewDescription": "选择这张白纸，一切从零开始。不受任何预设干扰，打造完全属于您个人风格的代码级可控精美简历。",
-        "useThisTemplate": "就用这个模板开始",
+        "namePlaceholder": "Nama",
+        "switchTemplate": "Ganti Template",
+        "cancel": "Batal",
+        "create": "Buat",
+        "blankTitle": "Resume Kosong",
+        "startFromBlank": "Mulai dari kosong",
+        "startFromTemplate": "Mulai dari template",
+        "blankCardDescription": "Buat dari template bawaan, mulai dari kosong",
+        "blankThumbnailDescription": "Selembar kertas putih, tidak terganggu preset apa pun, bebaskan kreativitas Anda, buat resume kode-kelas yang sepenuhnya milik Anda",
+        "createNow": "Buat Sekarang",
+        "backToGrid": "Kembali ke daftar template",
+        "blankPreviewDescription": "Pilih kertas putih ini, mulai dari nol. Tidak terganggu preset apa pun, buat resume kode-kelas yang indah sepenuhnya milik gaya pribadi Anda.",
+        "useThisTemplate": "Gunakan template ini untuk mulai",
         "sample": {
           "company": "Google",
-          "position": "高级软件工程师",
-          "present": "至今",
-          "workDescription": "主导前端团队，页面性能提升 40%。"
+          "position": "Senior Software Engineer",
+          "present": "Sekarang",
+          "workDescription": "Memimpin tim frontend, meningkatkan performa halaman 40%."
         }
       }
     },
     "settings": {
-      "title": "设置",
+      "title": "Pengaturan",
       "syncDirectory": {
-        "title": "同步目录",
-        "description": "选择一个文件夹来同步和备份您的简历。",
-        "currentSyncFolder": "当前同步文件夹",
-        "noFolderConfigured": "尚未配置同步文件夹",
-        "changeFolder": "更改文件夹",
-        "selectFolder": "选择文件夹"
+        "title": "Direktori Sinkronisasi",
+        "description": "Pilih folder untuk menyinkronkan dan membackup resume Anda.",
+        "currentSyncFolder": "Folder sinkronisasi saat ini",
+        "noFolderConfigured": "Belum ada folder sinkronisasi yang dikonfigurasi",
+        "changeFolder": "Ganti Folder",
+        "selectFolder": "Pilih Folder"
       },
       "sync": {
-        "title": "同步目录",
-        "description": "选择一个文件夹来同步和备份您的简历。",
-        "select": "选择文件夹"
+        "title": "Direktori Sinkronisasi",
+        "description": "Pilih folder untuk menyinkronkan dan membackup resume Anda.",
+        "select": "Pilih Folder"
       },
       "ai": {
-        "title": "AI 配置",
-        "currentModel": "当前使用的模型",
-        "selectModel": "选择模型",
-        "getApiKey": "获取 API Key",
+        "title": "Konfigurasi AI",
+        "currentModel": "Model saat ini",
+        "selectModel": "Pilih model",
+        "getApiKey": "Dapatkan Kunci API",
         "doubao": {
-          "title": "豆包",
-          "description": "在火山引擎获取 API 密钥",
-          "apiKey": "API Key",
-          "modelId": "模型 ID"
+          "title": "Doubao",
+          "description": "Dapatkan kunci API dari Volcengine",
+          "apiKey": "Kunci API",
+          "modelId": "ID Model"
         },
         "deepseek": {
           "title": "DeepSeek",
-          "description": "在 DeepSeek 开放平台获取 API 密钥",
-          "apiKey": "API Key"
+          "description": "Dapatkan kunci API dari Platform DeepSeek",
+          "apiKey": "Kunci API"
         },
         "openai": {
           "title": "OpenAI",
-          "description": "在 OpenAI 或兼容 OpenAI 格式的开放平台获取 API 密钥",
-          "apiKey": "API Key",
-          "modelId": "模型 ID",
-          "apiEndpoint": "API 端点，如：https://openai.example.org/v1"
+          "description": "Dapatkan kunci API di OpenAI atau platform terbuka yang kompatibel dengan OpenAI",
+          "apiKey": "Kunci API",
+          "modelId": "ID Model",
+          "apiEndpoint": "Titik akhir API, seperti: https://openai.example.org/v1"
         },
         "gemini": {
           "title": "Gemini",
-          "description": "支持润色、语法检查和 PDF 图片识别导入。推荐模型 ID：gemini-flash-latest",
-          "apiKey": "Gemini API Key",
-          "modelId": "Gemini 模型 ID"
+          "description": "Mendukung poles, pemeriksaan tata bahasa, dan impor resume gambar PDF. ID model yang direkomendasikan: gemini-flash-latest",
+          "apiKey": "Kunci API Gemini",
+          "modelId": "ID Model Gemini"
         },
         "custom": {
-          "title": "AI 配置",
-          "description": "连接您偏好的 AI 服务提供商 — 支持 10+ 个提供商",
-          "apiKey": "API Key",
-          "model": "模型",
-          "provider": "AI 服务提供商",
-          "customBaseUrl": "自定义基础地址",
-          "maxTokens": "最大 Token 数",
-          "temperature": "Temperature",
-          "saveConfiguration": "保存配置",
-          "removeKey": "移除密钥",
-          "keySaved": "密钥已保存",
-          "connected": "已连接",
-          "connectedTo": "已连接到",
-          "notConfigured": "未配置"
+          "title": "Konfigurasi AI",
+          "description": "Hubungkan penyedia layanan AI pilihan Anda — dukungan 10+ penyedia",
+          "apiKey": "Kunci API",
+          "model": "Model",
+          "provider": "Penyedia Layanan AI",
+          "customBaseUrl": "URL Dasar Kustom",
+          "maxTokens": "Jumlah Token Maks",
+          "temperature": "Temperatur",
+          "saveConfiguration": "Simpan Konfigurasi",
+          "removeKey": "Hapus Kunci",
+          "keySaved": "Kunci sudah disimpan",
+          "connected": "Terhubung",
+          "connectedTo": "Terhubung ke",
+          "notConfigured": "Belum dikonfigurasi"
         }
       }
     },
     "templates": {
-      "title": "模板",
-      "useTemplate": "使用此模板",
-      "preview": "预览",
-      "switchTemplate": "切换模板",
+      "title": "Template",
+      "useTemplate": "Gunakan Template Ini",
+      "preview": "Pratinjau",
+      "switchTemplate": "Ganti Template",
       "classic": {
-        "name": "经典模板",
-        "description": "传统简约的简历布局，适合大多数求职场景"
+        "name": "Template Klasik",
+        "description": "Layout resume tradisional dan minimalis, cocok untuk sebagian besar skenario pencarian kerja"
       },
       "modern": {
-        "name": "两栏布局",
-        "description": "经典两栏，突出个人特色"
+        "name": "Layout Dua Kolom",
+        "description": "Dua kolom klasik, menonjolkan karakter pribadi"
       },
       "leftRight": {
-        "name": "模块标题背景色",
-        "description": "模块标题背景鲜明，突出美观特色"
+        "name": "Background Warna Judul Modul",
+        "description": "Background judul modul yang mencolok, menonjolkan fitur estetika"
       },
       "timeline": {
-        "name": "时间轴布局",
-        "description": "时间轴风格，突出经历的时间顺序"
+        "name": "Layout Timeline",
+        "description": "Gaya timeline, menonjolkan urutan waktu pengalaman"
       },
       "minimalist": {
-        "name": "极简模板",
-        "description": "大面积留白，干净纯粹的排版风格"
+        "name": "Template Minimalis",
+        "description": "Whitespace yang luas, gaya排版 bersih dan murni"
       },
-
       "elegant": {
-        "name": "优雅模板",
-        "description": "居中标题单列设计，具有高级感的分隔线"
+        "name": "Template Elegan",
+        "description": "Desain judul terpusat satu kolom, dengan garis pemisah yang memiliki kesan premium"
       },
       "creative": {
-        "name": "创意模板",
-        "description": "视觉错落设计，灵动活泼展现个性"
+        "name": "Template Kreatif",
+        "description": "Desain visual yang dinamis, menampilkan kepribadian dengan hidup dan ceria"
       },
       "editorial": {
-        "name": "画报风模板",
-        "description": "大号精美衬线体与窄体无衬线的完美结合，极具奢华感"
+        "name": "Template Gaya Poster",
+        "description": "Kombinasi sempurna antara serif besar yang indah dan sans-serif sempit, sangat mewah"
       }
     }
   },
   "pdfExport": {
     "button": {
-      "export": "导出",
+      "export": "Ekspor",
       "exportPdf": "PDF",
-      "exportJson": "JSON配置",
-      "exporting": "导出中...",
-      "exportingJson": "导出中...",
-      "print": "PDF(备份)"
+      "exportJson": "Konfigurasi JSON",
+      "exporting": "Mengekspor...",
+      "exportingJson": "Mengekspor...",
+      "print": "PDF(Backup)"
     },
     "toast": {
-      "success": "PDF导出成功",
-      "error": "PDF导出失败",
-      "jsonSuccess": "配置导出成功",
-      "jsonError": "配置导出失败"
+      "success": "Ekspor PDF berhasil",
+      "error": "Ekspor PDF gagal",
+      "jsonSuccess": "Ekspor konfigurasi berhasil",
+      "jsonError": "Ekspor konfigurasi gagal"
     }
   },
   "workbench": {
     "sidePanel": {
       "layout": {
-        "title": "布局",
-        "addCustomSection": "添加模块",
-        "addCustomSectionOption": "添加自定义模块",
+        "title": "Layout",
+        "addCustomSection": "Tambah Modul",
+        "addCustomSectionOption": "Tambah Modul Kustom",
         "standardSections": {
-          "skills": "专业技能",
-          "experience": "工作经验",
-          "projects": "项目经历",
-          "education": "教育经历",
-          "selfEvaluation": "自我评价",
-          "certificates": "证书作品"
+          "skills": "Keahlian Profesional",
+          "experience": "Pengalaman Kerja",
+          "projects": "Pengalaman Proyek",
+          "education": "Riwayat Pendidikan",
+          "selfEvaluation": "Evaluasi Diri",
+          "certificates": "Sertifikat & Karya"
         }
       },
       "theme": {
-        "title": "主题色",
-        "custom": "自定义"
+        "title": "Warna Tema",
+        "custom": "Kustom"
       },
       "typography": {
-        "title": "排版",
+        "title": "Tipografi",
         "font": {
-          "title": "字体",
-          "alibaba": "阿里巴巴普惠体",
+          "title": "Font",
+          "alibaba": "Alibaba PuHui",
           "misans": "MiSans",
           "notosanssc": "Noto Sans SC",
-          "sourcehanserifsc": "思源宋体",
-          "note": "MiSans 依据其许可免费商用；使用本项目时请保留 MiSans 字体说明。"
+          "sourcehanserifsc": "Source Han Serif SC",
+          "note": "MiSans gratis untuk penggunaan komersial sesuai lisensinya; harap pertahankan keterangan font MiSans saat menggunakan proyek ini."
         },
         "lineHeight": {
-          "title": "行高",
-          "normal": "默认",
-          "relaxed": "适中",
-          "loose": "宽松"
+          "title": "Line Height",
+          "normal": "Default",
+          "relaxed": "Sedang",
+          "loose": "Longgar"
         },
         "baseFontSize": {
-          "title": "基础字号"
+          "title": "Ukuran Font Dasar"
         },
         "headerSize": {
-          "title": "模块标题字号"
+          "title": "Ukuran Judul Modul"
         },
         "subheaderSize": {
-          "title": "模块项一级标题字号"
+          "title": "Ukuran Subjudul Modul"
         }
       },
       "spacing": {
-        "title": "间距",
+        "title": "Spasi",
         "pagePadding": {
-          "title": "页边距"
+          "title": "Margin Halaman"
         },
         "sectionSpacing": {
-          "title": "模块间距"
+          "title": "Spasi Modul"
         },
         "paragraphSpacing": {
-          "title": "段落间距"
+          "title": "Spasi Paragraf"
         }
       },
       "mode": {
-        "title": "模式",
+        "title": "Mode",
         "useIconMode": {
-          "title": "图标模式"
+          "title": "Mode Ikon"
         },
         "centerSubtitle": {
-          "title": "副标题居中"
+          "title": "Subjudul di Tengah"
         },
         "flexibleHeaderLayout": {
-          "title": "长标题模式"
+          "title": "Mode Judul Panjang"
         }
       }
     },
     "basicPanel": {
-      "title": "资料",
-      "basicField": "基础字段",
-      "customField": "自定义字段",
-      "githubContributions": "Github贡献",
-      "layout": "布局",
-      "layoutLeft": "居左",
-      "layoutCenter": "居中",
-      "layoutRight": "居右",
-      "avatar": "头像",
+      "title": "Data Diri",
+      "basicField": "Field Dasar",
+      "customField": "Field Kustom",
+      "githubContributions": "Kontribusi Github",
+      "layout": "Layout",
+      "layoutLeft": "Rata Kiri",
+      "layoutCenter": "Di Tengah",
+      "layoutRight": "Rata Kanan",
+      "avatar": "Avatar",
       "customFields": {
         "placeholders": {
-          "label": "标签",
-          "value": "值"
+          "label": "Label",
+          "value": "Nilai"
         },
-        "displayLabel": "显示标签",
-        "addButton": "添加自定义字段"
+        "displayLabel": "Tampilkan Label",
+        "addButton": "Tambah Field Kustom"
       },
       "basicFields": {
-        "name": "姓名",
-        "title": "职位",
-        "email": "邮箱",
-        "phone": "电话",
-        "website": "个人网站",
-        "location": "地址",
-        "birthDate": "生日",
-        "employementStatus": "状态"
+        "name": "Nama",
+        "title": "Posisi",
+        "email": "Email",
+        "phone": "Telepon",
+        "website": "Website Pribadi",
+        "location": "Alamat",
+        "birthDate": "Tanggal Lahir",
+        "employementStatus": "Status"
       },
       "fieldVisibility": {
-        "show": "显示",
-        "hide": "隐藏"
+        "show": "Tampilkan",
+        "hide": "Sembunyikan"
       }
     },
     "experiencePanel": {
-      "title": "工作经历",
-      "addButton": "添加工作经历",
+      "title": "Pengalaman Kerja",
+      "addButton": "Tambah Pengalaman Kerja",
       "defaultProject": {
-        "company": "某科技有限公司",
-        "position": "高级前端工程师",
-        "date": "2020-至今",
-        "details": "负责公司核心产品..."
+        "company": "Perusahaan Teknologi",
+        "position": "Senior Frontend Engineer",
+        "date": "2020-Sekarang",
+        "details": "Bertanggung jawab atas produk inti perusahaan..."
       },
       "placeholders": {
-        "company": "请输入公司名称",
-        "position": "请输入职位",
-        "date": "请输入工作时间",
-        "details": "请输入工作职责和成就"
+        "company": "Masukkan nama perusahaan",
+        "position": "Masukkan posisi",
+        "date": "Masukkan waktu kerja",
+        "details": "Masukkan tanggung jawab dan pencapaian"
       }
     },
     "experienceItem": {
       "labels": {
-        "company": "公司名称",
-        "position": "岗位",
-        "date": "工作时间",
-        "details": "工作职责"
+        "company": "Nama Perusahaan",
+        "position": "Posisi",
+        "date": "Waktu Kerja",
+        "details": "Tanggung Jawab Kerja"
       },
       "placeholders": {
-        "company": "请输入公司名称",
-        "position": "如：前端工程师",
-        "date": "如：2020-至今",
-        "details": "描述你在这份工作中的职责和成就"
+        "company": "Masukkan nama perusahaan",
+        "position": "Contoh: Frontend Engineer",
+        "date": "Contoh: 2020-Sekarang",
+        "details": "Jelaskan tanggung jawab dan pencapaian Anda dalam pekerjaan ini"
       },
       "buttons": {
-        "edit": "编辑",
-        "save": "保存",
-        "cancel": "取消",
-        "delete": "删除"
+        "edit": "Edit",
+        "save": "Simpan",
+        "cancel": "Batal",
+        "delete": "Hapus"
       },
       "visibility": {
-        "show": "显示",
-        "hide": "隐藏"
+        "show": "Tampilkan",
+        "hide": "Sembunyikan"
       }
     },
     "projectPanel": {
-      "title": "项目经历",
-      "addButton": "添加项目",
+      "title": "Pengalaman Proyek",
+      "addButton": "Tambah Proyek",
       "defaultProject": {
-        "name": "个人项目",
-        "description": "项目描述",
-        "role": "负责内容",
-        "technologies": "技术栈",
+        "name": "Proyek Pribadi",
+        "description": "Deskripsi proyek",
+        "role": "Tanggung jawab",
+        "technologies": "Tech stack",
         "date": "2023.01 - 2023.06"
       },
       "placeholders": {
-        "name": "项目名称",
-        "description": "简要描述项目背景和目标",
-        "role": "你在项目中的角色和职责",
-        "technologies": "使用的技术和工具",
-        "date": "项目时间范围",
-        "link": "项目链接"
+        "name": "Nama proyek",
+        "description": "Jelaskan latar belakang dan tujuan proyek secara singkat",
+        "role": "Peran dan tanggung jawab Anda dalam proyek",
+        "technologies": "Teknologi dan tools yang digunakan",
+        "date": "Rentang waktu proyek",
+        "link": "Link proyek"
       }
     },
     "projectItem": {
       "labels": {
-        "name": "项目名称",
-        "role": "项目角色",
-        "date": "项目时间",
-        "description": "项目描述",
-        "link": "项目链接",
-        "linkLabel": "显示文字"
+        "name": "Nama Proyek",
+        "role": "Peran Proyek",
+        "date": "Waktu Proyek",
+        "description": "Deskripsi Proyek",
+        "link": "Link Proyek",
+        "linkLabel": "Teks Tampilan"
       },
       "placeholders": {
-        "name": "请输入项目名称",
-        "role": "你在项目中的角色",
-        "date": "项目时间范围",
-        "description": "简要描述项目背景和目标",
-        "link": "项目链接",
-        "linkLabel": "显示文字"
+        "name": "Masukkan nama proyek",
+        "role": "Peran Anda dalam proyek",
+        "date": "Rentang waktu proyek",
+        "description": "Jelaskan latar belakang dan tujuan proyek secara singkat",
+        "link": "Link proyek",
+        "linkLabel": "Teks tampilan"
       },
       "hints": {
-        "linkLabel": "显示文字留空时，将自动显示域名或完整链接。链接仅支持 http:// 或 https:// 链接。"
+        "linkLabel": "Saat teks tampilan kosong, akan otomatis menampilkan domain atau link lengkap. Link hanya mendukung http:// atau https://."
       },
       "buttons": {
-        "edit": "编辑",
-        "save": "保存",
-        "cancel": "取消",
-        "delete": "删除"
+        "edit": "Edit",
+        "save": "Simpan",
+        "cancel": "Batal",
+        "delete": "Hapus"
       },
       "visibility": {
-        "show": "显示",
-        "hide": "隐藏"
+        "show": "Tampilkan",
+        "hide": "Sembunyikan"
       }
     },
     "educationPanel": {
-      "title": "教育背景",
-      "addButton": "添加教育经历",
+      "title": "Riwayat Pendidikan",
+      "addButton": "Tambah Riwayat Pendidikan",
       "defaultProject": {
-        "school": "学校名称",
-        "degree": "学历",
-        "major": "专业",
+        "school": "Nama Sekolah",
+        "degree": "Gelar",
+        "major": "Jurusan",
         "date": "2020.09 - 2024.06"
       },
       "placeholders": {
-        "school": "请输入学校名称",
-        "degree": "请选择学历",
-        "major": "请输入专业名称",
-        "date": "请输入就读时间范围"
+        "school": "Masukkan nama sekolah",
+        "degree": "Pilih gelar",
+        "major": "Masukkan nama jurusan",
+        "date": "Masukkan rentang waktu sekolah"
       }
     },
     "educationItem": {
       "labels": {
-        "school": "学校名称",
-        "degree": "学历",
-        "major": "专业",
-        "date": "就读时间",
-        "description": "学校简介",
+        "school": "Nama Sekolah",
+        "degree": "Gelar",
+        "major": "Jurusan",
+        "date": "Waktu Sekolah",
+        "description": "Deskripsi Sekolah",
         "gpa": "GPA",
-        "startDate": "开始时间",
-        "endDate": "结束时间"
+        "startDate": "Waktu Mulai",
+        "endDate": "Waktu Selesai"
       },
       "placeholders": {
-        "school": "请输入学校名称",
-        "degree": "请选择学历",
-        "major": "请输入专业名称",
-        "date": "请输入就读时间范围",
-        "description": "请输入学校简介",
-        "gpa": "请输入GPA"
+        "school": "Masukkan nama sekolah",
+        "degree": "Pilih gelar",
+        "major": "Masukkan nama jurusan",
+        "date": "Masukkan rentang waktu sekolah",
+        "description": "Masukkan deskripsi sekolah",
+        "gpa": "Masukkan GPA"
       },
       "buttons": {
-        "edit": "编辑",
-        "save": "保存",
-        "cancel": "取消",
-        "delete": "删除"
+        "edit": "Edit",
+        "save": "Simpan",
+        "cancel": "Batal",
+        "delete": "Hapus"
       },
       "visibility": {
-        "show": "显示",
-        "hide": "隐藏"
+        "show": "Tampilkan",
+        "hide": "Sembunyikan"
       }
     },
     "certificatesPanel": {
-      "title": "证书作品",
-      "addButton": "添加照片或证书",
-      "tips": "支持点击上传或快捷键 (Cmd/Ctrl + V) 直接粘贴图片。拖动滑块可调整宽度实现横向拼接。",
-      "width": "宽度 (横向拼接占比)",
-      "delete": "删除",
-      "empty": "暂无图片，请上传或粘贴图片"
+      "title": "Sertifikat & Karya",
+      "addButton": "Tambah Foto atau Sertifikat",
+      "tips": "Mendukung upload atau paste gambar langsung dengan shortcut (Cmd/Ctrl + V). Geser slider untuk menyesuaikan lebar guna拼接 horizontal.",
+      "width": "Lebar (Proporsi拼接 Horizontal)",
+      "delete": "Hapus",
+      "empty": "Belum ada gambar, silakan upload atau paste gambar"
     }
   },
   "field": {
-    "selectDate": "选择日期",
-    "enterYear": "输入年份",
-    "toPresent": "至今"
+    "selectDate": "Pilih Tanggal",
+    "enterYear": "Masukkan Tahun",
+    "toPresent": "Sekarang"
   },
   "richEditor": {
-    "bold": "加粗",
-    "italic": "斜体",
-    "underline": "下划线",
-    "link": "链接",
-    "linkPlaceholder": "输入链接，例如 https://example.com",
-    "linkApply": "应用",
-    "linkRemove": "移除",
-    "linkInvalid": "请输入有效链接",
-    "textColor": "文字颜色",
-    "backgroundColor": "背景颜色",
-    "alignLeft": "左对齐",
-    "alignCenter": "居中对齐",
-    "alignRight": "右对齐",
-    "alignJustify": "两端对齐",
-    "bulletList": "无序列表",
-    "orderedList": "有序列表",
-    "undo": "撤销",
-    "redo": "重做",
-    "aiPolish": "AI 润色",
-    "paragraph": "正文",
-    "heading1": "标题 1",
-    "heading2": "标题 2",
-    "heading3": "标题 3",
+    "bold": "Bold",
+    "italic": "Italic",
+    "underline": "Garis Bawah",
+    "link": "Link",
+    "linkPlaceholder": "Masukkan link, contoh https://example.com",
+    "linkApply": "Terapkan",
+    "linkRemove": "Hapus",
+    "linkInvalid": "Masukkan link yang valid",
+    "textColor": "Warna Teks",
+    "backgroundColor": "Warna Background",
+    "alignLeft": "Rata Kiri",
+    "alignCenter": "Rata Tengah",
+    "alignRight": "Rata Kanan",
+    "alignJustify": "Rata Kiri-Kanan",
+    "bulletList": "Bullet List",
+    "orderedList": "Numbered List",
+    "undo": "Undo",
+    "redo": "Redo",
+    "aiPolish": "AI Polish",
+    "paragraph": "Paragraf",
+    "heading1": "Heading 1",
+    "heading2": "Heading 2",
+    "heading3": "Heading 3",
     "colors": {
-      "black": "黑色",
-      "darkGray": "深灰",
-      "gray": "灰色",
-      "red": "红色",
-      "orange": "橙色",
-      "orangeYellow": "橙黄",
-      "yellow": "黄色",
-      "yellowGreen": "黄绿",
-      "green": "绿色",
-      "cyan": "青色",
-      "lightBlue": "浅蓝",
-      "blue": "蓝色",
-      "purple": "紫色",
-      "magenta": "紫红",
-      "pink": "粉色"
+      "black": "Hitam",
+      "darkGray": "Abu-abu Gelap",
+      "gray": "Abu-abu",
+      "red": "Merah",
+      "orange": "Oranye",
+      "orangeYellow": "Oranye Kuning",
+      "yellow": "Kuning",
+      "yellowGreen": "Kuning Hijau",
+      "green": "Hijau",
+      "cyan": "Cyan",
+      "lightBlue": "Biru Muda",
+      "blue": "Biru",
+      "purple": "Ungu",
+      "magenta": "Magenta",
+      "pink": "Pink"
     }
   },
   "iconSelector": {
-    "all": "全部",
-    "searchPlaceholder": "搜索图标...",
-    "noMatchingIcons": "未找到匹配的图标",
-    "tryOtherKeywords": "请尝试其他搜索关键词",
-    "selectOtherCategory": "请选择其他分类",
+    "all": "Semua",
+    "searchPlaceholder": "Cari ikon...",
+    "noMatchingIcons": "Tidak ada ikon yang cocok",
+    "tryOtherKeywords": "Coba kata kunci pencarian lain",
+    "selectOtherCategory": "Pilih kategori lain",
     "categories": {
-      "personal": "个人信息",
-      "education": "教育背景",
-      "experience": "工作经验",
-      "skills": "技能",
-      "languages": "语言",
-      "projects": "项目",
-      "achievements": "成就证书",
-      "hobbies": "兴趣爱好",
-      "social": "社交媒体",
-      "others": "其他"
+      "personal": "Informasi Pribadi",
+      "education": "Riwayat Pendidikan",
+      "experience": "Pengalaman Kerja",
+      "skills": "Keahlian",
+      "languages": "Bahasa",
+      "projects": "Proyek",
+      "achievements": "Pencapaian & Sertifikat",
+      "hobbies": "Hobi",
+      "social": "Media Sosial",
+      "others": "Lainnya"
     },
     "icons": {
-      "user": "用户",
-      "email": "邮箱",
-      "phone": "电话",
-      "address": "地址",
-      "website": "网站",
-      "mobile": "手机",
-      "education": "学历",
-      "school": "学校",
-      "major": "专业",
-      "library": "图书馆",
-      "scholarship": "奖学金",
-      "work": "工作",
-      "company": "公司",
-      "office": "办公室",
-      "dateRange": "日期范围",
-      "workTime": "工作时间",
-      "programming": "编程",
-      "system": "系统",
-      "database": "数据库",
-      "terminal": "终端",
-      "techStack": "技术栈",
-      "language": "语言",
-      "speaking": "口语",
-      "communication": "交流",
-      "project": "项目",
-      "branch": "分支",
-      "release": "发布",
-      "target": "目标",
-      "trophy": "奖杯",
-      "medal": "奖牌",
-      "star": "星级",
-      "interest": "兴趣",
-      "music": "音乐",
-      "art": "艺术",
-      "photography": "摄影",
-      "linkedin": "领英",
-      "twitter": "推特",
-      "facebook": "脸书",
-      "instagram": "照片",
-      "profile": "简介",
-      "review": "审核",
-      "filter": "筛选",
-      "link": "链接",
-      "salary": "薪资",
-      "idea": "创意",
-      "send": "发送",
-      "share": "分享",
-      "settings": "设置",
-      "search": "搜索",
-      "flag": "标记",
-      "bookmark": "收藏",
-      "thumbsUp": "点赞",
-      "skill": "技能"
+      "user": "User",
+      "email": "Email",
+      "phone": "Telepon",
+      "address": "Alamat",
+      "website": "Website",
+      "mobile": "Mobile",
+      "education": "Pendidikan",
+      "school": "Sekolah",
+      "major": "Jurusan",
+      "library": "Perpustakaan",
+      "scholarship": "Beasiswa",
+      "work": "Kerja",
+      "company": "Perusahaan",
+      "office": "Kantor",
+      "dateRange": "Rentang Tanggal",
+      "workTime": "Waktu Kerja",
+      "programming": "Programming",
+      "system": "Sistem",
+      "database": "Database",
+      "terminal": "Terminal",
+      "techStack": "Tech Stack",
+      "language": "Bahasa",
+      "speaking": "Speaking",
+      "communication": "Komunikasi",
+      "project": "Proyek",
+      "branch": "Branch",
+      "release": "Release",
+      "target": "Target",
+      "trophy": "Trofi",
+      "medal": "Medali",
+      "star": "Bintang",
+      "interest": "Minat",
+      "music": "Musik",
+      "art": "Seni",
+      "photography": "Fotografi",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "profile": "Profil",
+      "review": "Review",
+      "filter": "Filter",
+      "link": "Link",
+      "salary": "Gaji",
+      "idea": "Ide",
+      "send": "Kirim",
+      "share": "Bagikan",
+      "settings": "Pengaturan",
+      "search": "Cari",
+      "flag": "Flag",
+      "bookmark": "Bookmark",
+      "thumbsUp": "Jempol",
+      "skill": "Keahlian"
     }
   },
   "photoConfig": {
-    "title": "头像设置",
-    "description": "自定义您的简历头像",
+    "title": "Pengaturan Foto Profil",
+    "description": "Sesuaikan foto profil resume Anda",
     "upload": {
-      "title": "在线链接",
-      "dragHint": "拖拽或点击上传图片",
-      "sizeLimit": "图片大小不能超过2MB",
-      "typeLimit": "请上传图片文件",
-      "urlPlaceholder": "输入图片链接",
-      "invalidUrl": "图片链接无效或无法访问，请尝试使用其他图片链接",
-      "timeout": "加载超时",
-      "loadError": "图片加载失败"
+      "title": "Link Online",
+      "dragHint": "Drag & drop atau klik untuk upload gambar",
+      "sizeLimit": "Ukuran gambar tidak boleh lebih dari 2MB",
+      "typeLimit": "Silakan upload file gambar",
+      "urlPlaceholder": "Masukkan link gambar",
+      "invalidUrl": "Link gambar tidak valid atau tidak dapat diakses, coba gunakan link gambar lain",
+      "timeout": "Loading timeout",
+      "loadError": "Gambar gagal dimuat"
     },
     "config": {
-      "aspectRatio": "宽高比",
-      "size": "尺寸",
-      "width": "宽度",
-      "height": "高度",
-      "border-radius": "圆角",
-      "widthPlaceholder": "宽度",
-      "heightPlaceholder": "高度",
+      "aspectRatio": "Aspect Ratio",
+      "size": "Ukuran",
+      "width": "Lebar",
+      "height": "Tinggi",
+      "border-radius": "Border Radius",
+      "widthPlaceholder": "Lebar",
+      "heightPlaceholder": "Tinggi",
       "ratios": {
-        "1:1": "1:1 正方形",
-        "4:3": "4:3 横版",
-        "3:4": "3:4 竖版",
-        "16:9": "16:9 宽屏",
-        "custom": "自定义"
+        "1:1": "1:1 Kotak",
+        "4:3": "4:3 Landscape",
+        "3:4": "3:4 Portrait",
+        "16:9": "16:9 Widescreen",
+        "custom": "Kustom"
       },
       "borderRadius": {
-        "none": "无",
-        "medium": "中等",
-        "full": "圆形",
-        "custom": "自定义",
-        "customPlaceholder": "自定义圆角大小"
+        "none": "Tidak Ada",
+        "medium": "Sedang",
+        "full": "Lingkaran",
+        "custom": "Kustom",
+        "customPlaceholder": "Ukuran border radius kustom"
       }
     },
     "actions": {
-      "reset": "重置",
-      "close": "关闭",
-      "cancel": "取消",
-      "removePhoto": "删除头像"
+      "reset": "Reset",
+      "close": "Tutup",
+      "cancel": "Batal",
+      "removePhoto": "Hapus Foto"
     }
   },
   "previewDock": {
-    "switchTemplate": "切换模板",
+    "switchTemplate": "Ganti Template",
     "grammarCheck": {
-      "idle": "AI语法纠错",
-      "checking": "检查中...",
-      "configurePrompt": "请先配置 ApiKey 和 模型Id",
-      "configureButton": "去配置",
-      "errorToast": "语法检查失败，请重试"
+      "idle": "Koreksi Tata Bahasa AI",
+      "checking": "Memeriksa...",
+      "configurePrompt": "Harap konfigurasi ApiKey dan ModelId terlebih dahulu",
+      "configureButton": "Ke Konfigurasi",
+      "errorToast": "Pemeriksaan tata bahasa gagal, silakan coba lagi"
     },
     "sidePanel": {
-      "expand": "展开侧边栏",
-      "collapse": "收起侧边栏"
+      "expand": "Buka Sidebar",
+      "collapse": "Tutup Sidebar"
     },
     "editPanel": {
-      "expand": "展开编辑面板",
-      "collapse": "收起编辑面板"
+      "expand": "Buka Panel Edit",
+      "collapse": "Tutup Panel Edit"
     },
     "previewPanel": {
-      "expand": "展开预览面板",
-      "collapse": "收起预览面板"
+      "expand": "Buka Panel Preview",
+      "collapse": "Tutup Panel Preview"
     },
     "github": "GitHub",
-    "backToDashboard": "返回仪表盘",
+    "backToDashboard": "Kembali ke Dasbor",
     "copyResume": {
-      "tooltip": "复制简历",
-      "success": "简历复制成功",
-      "error": "简历复制失败"
+      "tooltip": "Salin Resume",
+      "success": "Resume berhasil disalin",
+      "error": "Resume gagal disalin"
     },
     "export": {
-      "tooltip": "导出简历",
-      "pdf": "导出PDF",
-      "json": "导出JSON",
-      "print": "导出PDF(备份）"
+      "tooltip": "Ekspor Resume",
+      "pdf": "Ekspor PDF",
+      "json": "Ekspor JSON",
+      "print": "Ekspor PDF(Backup)"
     },
     "autoOnePage": {
-      "tooltip": "自动一页纸",
-      "enabled": "已开启一页纸模式",
-      "disabled": "已关闭一页纸模式",
-      "cannotFit": "内容较多，已尽量压缩但无法完美一页，建议精简内容, 也可在此基础上调节页边距、字体大小等左侧设置栏选项"
+      "tooltip": "Otomatis Satu Halaman",
+      "enabled": "Mode satu halaman diaktifkan",
+      "disabled": "Mode satu halaman dinonaktifkan",
+      "cannotFit": "Konten cukup banyak, sudah berusaha mengompres tetapi tidak bisa sempurna satu halaman, disarankan untuk menyederhanakan konten, juga bisa mengatur margin, ukuran font, dll di pengaturan sidebar kiri"
     },
     "backup": {
-      "configured": "备份已配置",
-      "notConfigured": "未配置备份目录",
-      "clickToConfigure": "点击前往设置"
+      "configured": "Backup sudah dikonfigurasi",
+      "notConfigured": "Folder backup belum dikonfigurasi",
+      "clickToConfigure": "Klik untuk ke pengaturan"
     }
   },
   "aiPolishDialog": {
-    "title": "AI 润色",
+    "title": "AI Polish",
     "description": {
-      "ready": "填写可选的自定义要求后，点击「开始润色」",
-      "polishing": "正在为您润色内容...",
-      "finished": "已经为您优化了内容，请查看效果"
+      "ready": "Isi persyaratan kustom opsional, lalu klik「Mulai Polish」",
+      "polishing": "Sedang memoles konten Anda...",
+      "finished": "Konten telah dioptimasi, silakan lihat hasilnya"
     },
     "error": {
-      "configRequired": "请先配置 AI 模型",
-      "polishFailed": "润色失败",
-      "applied": "已应用润色内容"
+      "configRequired": "Harap konfigurasi model AI terlebih dahulu",
+      "polishFailed": "Polish gagal",
+      "applied": "Konten polish telah diterapkan"
     },
     "content": {
-      "original": "原始内容",
-      "polished": "润色后的内容"
+      "original": "Konten Asli",
+      "polished": "Konten Setelah Polish"
     },
-    "customInstructions": "自定义要求",
-    "customInstructionsPlaceholder": "例如：请用更技术化的表述、突出量化成果、语气偏正式…（选填，留空则按默认规则润色）",
+    "customInstructions": "Persyaratan Kustom",
+    "customInstructionsPlaceholder": "Contoh: Gunakan ekspresi yang lebih teknis, tekankan hasil kuantitatif, nada formal… (opsional, kosongkan untuk polish dengan aturan default)",
     "button": {
-      "start": "开始润色",
-      "regenerate": "重新生成",
-      "generating": "生成中...",
-      "apply": "应用内容"
+      "start": "Mulai Polish",
+      "regenerate": "Generate Ulang",
+      "generating": "Generating...",
+      "apply": "Terapkan Konten"
     }
   },
   "templates": {
-    "switchTemplate": "切换模板"
+    "switchTemplate": "Ganti Template"
   },
   "themeModal": {
     "delete": {
-      "title": "确定要删除吗",
-      "description": "您确定要删除{title}吗？",
-      "confirmText": "删除",
-      "cancelText": "取消"
+      "title": "Yakin ingin menghapus?",
+      "description": "Anda yakin ingin menghapus {title}?",
+      "confirmText": "Hapus",
+      "cancelText": "Batal"
     }
   },
   "grammarCheck": {
-    "title": "AI 语法检查",
-    "description": "发现 {count} 个建议优化项",
-    "exit": "退出检查",
-    "spelling": "错别字",
-    "punctuation": "标点符号",
-    "original": "原文",
-    "error_point": "错误点",
-    "suggestion": "建议修改",
-    "reason": "原因",
-    "accept": "应用",
-    "ignore": "忽略",
-    "found_issues": "发现 {count} 个问题",
-    "applied_success": "已应用修改",
-    "apply_error": "未找到对应文本，无法自动修改",
-    "no_errors_title": "太棒了！",
-    "no_errors_desc": "文档非常完美，没有发现任何错别字或标点错误。"
+    "title": "Pemeriksaan Tata Bahasa AI",
+    "description": "Ditemukan {count} saran optimasi",
+    "exit": "Keluar dari Pemeriksaan",
+    "spelling": "Salah Ketik",
+    "punctuation": "Tanda Baca",
+    "original": "Teks Asli",
+    "error_point": "Titik Kesalahan",
+    "suggestion": "Saran Perubahan",
+    "reason": "Alasan",
+    "accept": "Terapkan",
+    "ignore": "Abaikan",
+    "found_issues": "Ditemukan {count} masalah",
+    "applied_success": "Perubahan telah diterapkan",
+    "apply_error": "Teks yang sesuai tidak ditemukan, tidak bisa otomatis mengubah",
+    "no_errors_title": "Bagus!",
+    "no_errors_desc": "Dokumen sangat sempurna, tidak ditemukan kesalahan ketik atau tanda baca."
   },
   "faqDialog": {
-    "title": "常见问题 (FAQ)",
-    "description": "关于 Magic Resume 工作台的一些常用技巧和解答。",
+    "title": "Pertanyaan Umum (FAQ)",
+    "description": "Beberapa tips dan jawaban umum tentang workspace Magic Resume.",
     "items": {
       "browser-compatibility": {
-        "question": "推荐使用什么浏览器？",
-        "answer": "推荐使用最新版的 Chrome (谷歌浏览器) 或 Edge 浏览器以获得最佳排版和导出体验。部分不兼容的旧版浏览器可能会导致样式错乱。"
+        "question": "Browser apa yang direkomendasikan?",
+        "answer": "Direkomendasikan menggunakan Chrome (Google Chrome) atau Edge versi terbaru untuk pengalaman排版 dan ekspor terbaik. Beberapa browser lama yang tidak kompatibel mungkin menyebabkan masalah gaya."
       },
       "export-methods": {
-        "question": "两种导出方式有什么不同？",
-        "answer": "• PDF 导出：使用后端服务进行高精度渲染，100% 还原排版，推荐用于正式发送给 HR。\n\n• 浏览器打印：调用您当前浏览器的自带打印功能（另存为 PDF）。适合在后端导出服务繁忙或您需要通过浏览器微调打印边距时使用。"
+        "question": "Apa perbedaan antara dua cara ekspor?",
+        "answer": "• Ekspor PDF: Menggunakan layanan backend untuk rendering presisi tinggi, 100%还原排版, direkomendasikan untuk dikirim ke HR.\n\n• Cetak Browser: Memanggil fungsi cetak bawaan browser Anda saat ini (simpan sebagai PDF). Cocok digunakan saat layanan ekspor backend sibuk atau Anda perlu menyesuaikan margin cetak melalui browser."
       },
       "export-failure": {
-        "question": "导出失败或样式错乱怎么办？",
-        "answer": "1. 推荐使用 Google Chrome 浏览器 (https://www.google.cn/intl/zh-CN/chrome/) 以获得最佳兼容性。\n2. 如果导出依然失败，请尝试在“无痕模式”下进行操作，排除插件干扰。\n3. 或者点击导出菜单中的“PDF (备份)”选项，并在打印预览界面选择“另存为 PDF”。"
+        "question": "Bagaimana jika ekspor gagal atau gaya berantakan?",
+        "answer": "1. Direkomendasikan menggunakan Google Chrome browser (https://www.google.com/chrome/) untuk kompatibilitas terbaik.\n2. Jika ekspor masih gagal, coba gunakan dalam mode「Incognito」untuk menghilangkan gangguan plugin.\n3. Atau klik opsi「PDF (Backup)」di menu ekspor, dan pilih「Simpan sebagai PDF」di halaman preview cetak."
       },
       "drag-and-drop": {
-        "question": "如何拖拽调整模块顺序？",
-        "answer": "在左侧编辑面板的“布局”设置中，将光标悬停在模块卡片左侧的「拖拽手柄」（通常表现为六个点状图标）上，按住鼠标左键即可上下拖拽模块以重新排序整个简历的章节。"
+        "question": "Bagaimana cara drag & drop untuk mengatur urutan modul?",
+        "answer": "Di panel edit kiri dalam pengaturan「Layout」, arahkan kursor ke「drag handle」di sisi kiri kartu modul (biasanya berupa ikon enam titik), tahan klik kiri mouse untuk drag modul ke atas atau ke bawah guna mengurutkan ulang bab resume."
       }
     }
   }
