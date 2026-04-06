@@ -213,12 +213,18 @@
           "modelId": "Gemini 模型 ID"
         },
         "custom": {
-          "title": "自定义服务",
-          "description": "配置任何兼容 OpenAI 格式的 API 端点",
+          "title": "自定义 AI 服务",
+          "description": "配置任何兼容 OpenAI 格式的 AI 服务",
           "apiKey": "API Key",
           "modelId": "模型 ID",
-          "apiEndpoint": "API 端点（如：https://api.example.com/v1）",
-          "providerName": "服务名称（可选）"
+          "apiEndpoint": "API 基础地址",
+          "endpointHint": "API 基础地址（如：https://api.openai.com 或 http://localhost:11434）",
+          "providerName": "服务名称",
+          "quickPresets": "快速预设",
+          "advanced": "高级设置",
+          "advancedHint": "这些设置会根据您的提供商自动配置。",
+          "configured": "✓ 服务已配置完成，可以使用",
+          "notConfigured": "⚠ 请填写所有字段以启用 AI 功能"
         }
       }
     },

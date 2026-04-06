@@ -75,7 +75,14 @@ export const AI_MODEL_CONFIGS: Record<AIModelType, AIModelConfig> = {
       !!(context.geminiApiKey && context.geminiModelId),
   },
   custom: {
-    url: (endpoint?: string) => `${endpoint || ""}/chat/completions`,
+    url: (endpoint?: string) => {
+      const base = endpoint || "";
+      // Smart endpoint construction: handle various endpoint formats
+      if (base.endsWith("/chat/completions")) return base;
+      if (base.endsWith("/v1")) return `${base}/chat/completions`;
+      if (base.endsWith("/v1/")) return `${base}chat/completions`;
+      return `${base}/v1/chat/completions`;
+    },
     requiresModelId: true,
     headers: (apiKey: string) => ({
       "Content-Type": "application/json",
@@ -83,6 +90,7 @@ export const AI_MODEL_CONFIGS: Record<AIModelType, AIModelConfig> = {
     }),
     validate: (context: AIValidationContext) =>
       !!(
+        context.customProviderName &&
         context.customApiKey &&
         context.customApiEndpoint &&
         context.customModelId
