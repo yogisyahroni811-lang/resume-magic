@@ -3,13 +3,6 @@
   "outputDirectory": "dist/client",
   "devCommand": "vite dev",
   "installCommand": "pnpm install",
-  "functions": {
-    "api/index.mjs": {
-      "runtime": "nodejs20.x",
-      "memory": 1024,
-      "maxDuration": 10
-    }
-  },
   "rewrites": [
     {
       "source": "/(.*)",

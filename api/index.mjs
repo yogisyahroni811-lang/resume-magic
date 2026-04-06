@@ -1,10 +1,13 @@
 import { Readable } from "node:stream";
 
-// Import the TanStack Start server entry
-const serverEntry = await import("../dist/server/server.js");
-
+/**
+ * @type {import('@vercel/node').VercelRequestHandler}
+ */
 export default async function handler(request, response) {
   try {
+    // Import the TanStack Start server entry dynamically
+    const serverEntry = await import("../dist/server/server.js");
+
     const protocol = request.headers["x-forwarded-proto"] || "http";
     const host = request.headers.host || "localhost";
     const url = `${protocol}://${host}${request.url}`;
@@ -72,10 +75,10 @@ export default async function handler(request, response) {
   }
 }
 
+// @ts-ignore
 export const config = {
   api: {
     bodyParser: false,
     externalResolver: true,
   },
-  runtime: "nodejs20.x",
 };
