@@ -31,7 +31,7 @@ interface GrammarStore {
 const markSingleError = (
   marker: Mark,
   error: GrammarError,
-  options?: { selected?: boolean; activeIndex?: number }
+  options?: { selected?: boolean; activeIndex?: number },
 ) => {
   const keyword = (error.text || "").trim();
   if (!keyword) return;
@@ -43,19 +43,25 @@ const markSingleError = (
     className: cn(
       "grammar-error",
       error.type,
-      options?.selected && options?.activeIndex !== undefined && `active-${options.activeIndex}`
+      options?.selected &&
+        options?.activeIndex !== undefined &&
+        `active-${options.activeIndex}`,
     ),
     filter: () => {
       if (hasMarked) return false;
       hasMarked = true;
       return true;
-    }
+    },
   });
 };
 
-const getPreviewScrollContainer = (element: HTMLElement): HTMLElement | null => {
+const getPreviewScrollContainer = (
+  element: HTMLElement,
+): HTMLElement | null => {
   const containers = Array.from(
-    document.querySelectorAll<HTMLElement>('[data-preview-scroll-container="true"]')
+    document.querySelectorAll<HTMLElement>(
+      '[data-preview-scroll-container="true"]',
+    ),
   );
 
   for (const container of containers) {
@@ -100,7 +106,10 @@ export const useGrammarStore = create<GrammarStore>((set, get) => ({
       openaiModelId,
       openaiApiEndpoint,
       geminiApiKey,
-      geminiModelId
+      geminiModelId,
+      customApiKey,
+      customModelId,
+      customApiEndpoint,
     } = useAIConfigStore.getState();
 
     const config = AI_MODEL_CONFIGS[selectedModel];
@@ -111,7 +120,9 @@ export const useGrammarStore = create<GrammarStore>((set, get) => ({
           ? openaiApiKey
           : selectedModel === "gemini"
             ? geminiApiKey
-            : deepseekApiKey;
+            : selectedModel === "custom"
+              ? customApiKey
+              : deepseekApiKey;
     const modelId =
       selectedModel === "doubao"
         ? doubaoModelId
@@ -119,7 +130,9 @@ export const useGrammarStore = create<GrammarStore>((set, get) => ({
           ? openaiModelId
           : selectedModel === "gemini"
             ? geminiModelId
-            : deepseekModelId;
+            : selectedModel === "custom"
+              ? customModelId
+              : deepseekModelId;
 
     set({ isChecking: true });
 
@@ -134,7 +147,12 @@ export const useGrammarStore = create<GrammarStore>((set, get) => ({
           apiKey,
           model: config.requiresModelId ? modelId : config.defaultModel,
           modelType: selectedModel,
-          apiEndpoint: selectedModel === "openai" ? openaiApiEndpoint : undefined,
+          apiEndpoint:
+            selectedModel === "openai"
+              ? openaiApiEndpoint
+              : selectedModel === "custom"
+                ? customApiEndpoint
+                : undefined,
         }),
       });
 
@@ -210,14 +228,16 @@ export const useGrammarStore = create<GrammarStore>((set, get) => ({
     errors.forEach((err, i) => {
       markSingleError(marker, err, {
         selected: i === index,
-        activeIndex: index
+        activeIndex: index,
       });
     });
 
     const marks = preview.querySelectorAll("mark");
     const selectedMark = marks[index];
     if (selectedMark) {
-      const scrollContainer = getPreviewScrollContainer(selectedMark as HTMLElement);
+      const scrollContainer = getPreviewScrollContainer(
+        selectedMark as HTMLElement,
+      );
 
       if (scrollContainer) {
         const containerRect = scrollContainer.getBoundingClientRect();
@@ -230,12 +250,12 @@ export const useGrammarStore = create<GrammarStore>((set, get) => ({
           markRect.height / 2;
         const maxTop = Math.max(
           0,
-          scrollContainer.scrollHeight - scrollContainer.clientHeight
+          scrollContainer.scrollHeight - scrollContainer.clientHeight,
         );
 
         scrollContainer.scrollTo({
           top: Math.max(0, Math.min(nextTop, maxTop)),
-          behavior: "smooth"
+          behavior: "smooth",
         });
       }
     }
@@ -244,7 +264,7 @@ export const useGrammarStore = create<GrammarStore>((set, get) => ({
     set((state) => {
       const newErrors = [...state.errors];
       newErrors.splice(index, 1);
-      
+
       const preview = document.getElementById("resume-preview");
       if (preview) {
         // 重新标记剩余错误
@@ -253,7 +273,7 @@ export const useGrammarStore = create<GrammarStore>((set, get) => ({
         newErrors.forEach((error, i) => {
           markSingleError(marker, error, {
             selected: state.selectedErrorIndex === i,
-            activeIndex: state.selectedErrorIndex ?? undefined
+            activeIndex: state.selectedErrorIndex ?? undefined,
           });
         });
       }

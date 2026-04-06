@@ -70,7 +70,7 @@ const MagicThread = ({ height = 40 }: { height?: number }) => (
   <div className="relative flex flex-col items-center" style={{ height }}>
     {/* Base dashed line */}
     <div className="absolute inset-y-0 w-[1px] border-l border-dashed border-primary/30" />
-    
+
     {/* Traveling pulse */}
     <motion.div
       className="absolute top-0 w-[1px] h-4 bg-gradient-to-b from-transparent via-primary to-transparent"
@@ -110,7 +110,13 @@ const PreviewDock = ({
     deepseekModelId,
     openaiApiKey,
     openaiModelId,
-    openaiApiEndpoint
+    openaiApiEndpoint,
+    geminiApiKey,
+    geminiModelId,
+    customApiKey,
+    customModelId,
+    customApiEndpoint,
+    customProviderName
   } = useAIConfigStore();
 
   const { duplicateResume, setActiveResume, activeResumeId, activeResume, updateGlobalSettings } = useResumeStore();
@@ -376,7 +382,7 @@ const PreviewDock = ({
                   <TooltipTrigger asChild>
                     <button
                       onClick={toggleSidePanel}
-                       className={cn(
+                      className={cn(
                         "flex h-[30px] w-[30px] items-center justify-center rounded-sm transition-all",
                         "hover:bg-gray-100/50 dark:hover:bg-neutral-800/50",
                         "active:scale-95",
@@ -453,7 +459,7 @@ const PreviewDock = ({
                 </Tooltip>
               </DockIcon>
               <div className="w-full h-[1px] bg-gray-200" />
- 
+
               <DockIcon>
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -496,7 +502,7 @@ const PreviewDock = ({
         </TooltipProvider>
 
         <MagicThread height={60} />
-        
+
         <div className="w-[56px] flex justify-center">
           <FAQDialog />
         </div>
