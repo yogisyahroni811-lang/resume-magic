@@ -2,8 +2,8 @@ import { ResumeTemplate } from "@/types/template";
 
 export const modernConfig: ResumeTemplate = {
   id: "modern",
-  name: "两栏布局",
-  description: "经典两栏，突出个人特色",
+  name: "Layout Dua Kolom",
+  description: "Dua kolom klasik, menonjolkan karakter pribadi",
   thumbnail: "modern",
   layout: "modern",
   colorScheme: {
@@ -20,5 +20,12 @@ export const modernConfig: ResumeTemplate = {
   basic: {
     layout: "center",
   },
-  availableSections: ["skills", "experience", "projects", "education", "selfEvaluation", "certificates"],
+  availableSections: [
+    "skills",
+    "experience",
+    "projects",
+    "education",
+    "selfEvaluation",
+    "certificates",
+  ],
 };

@@ -2,8 +2,8 @@ import { ResumeTemplate } from "@/types/template";
 
 export const leftRightConfig: ResumeTemplate = {
   id: "left-right",
-  name: "模块标题背景色",
-  description: "模块标题背景鲜明，突出美观特色",
+  name: "Background Warna Judul Modul",
+  description: "Background judul modul yang mencolok, menonjolkan estetika",
   thumbnail: "leftRight",
   layout: "left-right",
   colorScheme: {
@@ -20,5 +20,12 @@ export const leftRightConfig: ResumeTemplate = {
   basic: {
     layout: "left",
   },
-  availableSections: ["skills", "experience", "projects", "education", "selfEvaluation", "certificates"],
+  availableSections: [
+    "skills",
+    "experience",
+    "projects",
+    "education",
+    "selfEvaluation",
+    "certificates",
+  ],
 };

@@ -2,8 +2,8 @@ import { ResumeTemplate } from "@/types/template";
 
 export const minimalistConfig: ResumeTemplate = {
   id: "minimalist",
-  name: "极简模板",
-  description: "大面积留白，干净纯粹的排版风格",
+  name: "Template Minimalis",
+  description: "Whitespace luas, gaya bersih dan murni",
   thumbnail: "minimalist",
   layout: "minimalist",
   colorScheme: {
@@ -20,5 +20,12 @@ export const minimalistConfig: ResumeTemplate = {
   basic: {
     layout: "center",
   },
-  availableSections: ["skills", "experience", "projects", "education", "selfEvaluation", "certificates"],
+  availableSections: [
+    "skills",
+    "experience",
+    "projects",
+    "education",
+    "selfEvaluation",
+    "certificates",
+  ],
 };

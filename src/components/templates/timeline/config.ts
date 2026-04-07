@@ -2,8 +2,8 @@ import { ResumeTemplate } from "@/types/template";
 
 export const timelineConfig: ResumeTemplate = {
   id: "timeline",
-  name: "时间线风格",
-  description: "时间线布局，突出经历的时间顺序",
+  name: "Gaya Timeline",
+  description: "Layout timeline, menonjolkan urutan kronologis pengalaman",
   thumbnail: "timeline",
   layout: "timeline",
   colorScheme: {
@@ -20,5 +20,12 @@ export const timelineConfig: ResumeTemplate = {
   basic: {
     layout: "left",
   },
-  availableSections: ["skills", "experience", "projects", "education", "selfEvaluation", "certificates"],
+  availableSections: [
+    "skills",
+    "experience",
+    "projects",
+    "education",
+    "selfEvaluation",
+    "certificates",
+  ],
 };

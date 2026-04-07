@@ -3,7 +3,8 @@ import { ResumeTemplate } from "@/types/template";
 export const editorialConfig: ResumeTemplate = {
   id: "editorial",
   name: "Editorial",
-  description: "高端画报风模板，大号精美衬线体与窄体无衬线的完美结合，附带专属侧边时光轴设计，极具奢华感。",
+  description:
+    "Template gaya poster premium, kombinasi sempurna serif besar yang indah dan sans-serif sempit, dengan desain timeline sidebar eksklusif, sangat mewah",
   thumbnail: "editorial",
   layout: "editorial",
   colorScheme: {
@@ -20,5 +21,15 @@ export const editorialConfig: ResumeTemplate = {
   basic: {
     layout: "left",
   },
-  availableSections: ["basic", "experience", "education", "projects", "skills", "selfEvaluation", "certificates", "languages", "custom"],
+  availableSections: [
+    "basic",
+    "experience",
+    "education",
+    "projects",
+    "skills",
+    "selfEvaluation",
+    "certificates",
+    "languages",
+    "custom",
+  ],
 };

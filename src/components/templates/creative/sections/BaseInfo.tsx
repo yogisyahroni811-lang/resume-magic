@@ -30,7 +30,7 @@ const BaseInfo = ({ basic = {} as BasicInfo, globalSettings, template }: BaseInf
 
     const getOrderedFields = React.useMemo(() => {
         if (!basic.fieldOrder) {
-            return [{ key: "email", value: basic.email, icon: basic.icons?.email || "Mail", label: "电子邮箱", visible: true, custom: false }]
+            return [{ key: "email", value: basic.email, icon: basic.icons?.email || "Mail", label: "Email", visible: true, custom: false }]
                 .filter((item) => Boolean(item.value && item.visible));
         }
         return basic.fieldOrder
@@ -88,21 +88,22 @@ const BaseInfo = ({ basic = {} as BasicInfo, globalSettings, template }: BaseInf
                         const customFieldHref = item.custom && "href" in item && typeof item.href === "string" ? item.href : null;
 
                         return (
-                        <motion.div key={item.key} className="flex items-center whitespace-nowrap overflow-hidden text-baseFont" style={{ color: "#fff" }}>
-                            {useIconMode ? (
-                                <div className="flex items-center gap-1" style={{ color: "#fff" }}>
-                                    {getIcon(item.icon)}
-                                    {item.key === "email" ? <a href={`mailto:${item.value}`} className="underline" style={{ color: "#fff" }}>{item.value}</a> : customFieldHref ? <a href={customFieldHref} target="_blank" rel="noopener noreferrer" className="underline truncate" style={{ color: "#fff" }}>{item.value}</a> : <span style={{ color: "#fff" }}>{item.value}</span>}
-                                </div>
-                            ) : (
-                                <div className="flex items-center gap-2 overflow-hidden" style={{ color: "#fff" }}>
-                                    {!item.custom && <span style={{ color: "#fff" }}>{t(`basicPanel.basicFields.${item.key}`)}:</span>}
-                                    {item.custom && shouldShowCustomFieldLabelPrefix(item) && <span style={{ color: "#fff" }}>{item.label}:</span>}
-                                    {customFieldHref ? <a href={customFieldHref} target="_blank" rel="noopener noreferrer" className="truncate underline" suppressHydrationWarning style={{ color: "#fff" }}>{item.value}</a> : <span className="truncate" suppressHydrationWarning style={{ color: "#fff" }}>{item.value}</span>}
-                                </div>
-                            )}
-                        </motion.div>
-                    )})}
+                            <motion.div key={item.key} className="flex items-center whitespace-nowrap overflow-hidden text-baseFont" style={{ color: "#fff" }}>
+                                {useIconMode ? (
+                                    <div className="flex items-center gap-1" style={{ color: "#fff" }}>
+                                        {getIcon(item.icon)}
+                                        {item.key === "email" ? <a href={`mailto:${item.value}`} className="underline" style={{ color: "#fff" }}>{item.value}</a> : customFieldHref ? <a href={customFieldHref} target="_blank" rel="noopener noreferrer" className="underline truncate" style={{ color: "#fff" }}>{item.value}</a> : <span style={{ color: "#fff" }}>{item.value}</span>}
+                                    </div>
+                                ) : (
+                                    <div className="flex items-center gap-2 overflow-hidden" style={{ color: "#fff" }}>
+                                        {!item.custom && <span style={{ color: "#fff" }}>{t(`basicPanel.basicFields.${item.key}`)}:</span>}
+                                        {item.custom && shouldShowCustomFieldLabelPrefix(item) && <span style={{ color: "#fff" }}>{item.label}:</span>}
+                                        {customFieldHref ? <a href={customFieldHref} target="_blank" rel="noopener noreferrer" className="truncate underline" suppressHydrationWarning style={{ color: "#fff" }}>{item.value}</a> : <span className="truncate" suppressHydrationWarning style={{ color: "#fff" }}>{item.value}</span>}
+                                    </div>
+                                )}
+                            </motion.div>
+                        )
+                    })}
                 </motion.div>
             </div>
         </SectionWrapper>

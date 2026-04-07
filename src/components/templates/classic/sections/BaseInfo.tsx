@@ -28,7 +28,7 @@ const BaseInfo = ({ basic = {} as BasicInfo, globalSettings, template }: BaseInf
 
     const getOrderedFields = React.useMemo(() => {
         if (!basic.fieldOrder) {
-            return [{ key: "email", value: basic.email, icon: basic.icons?.email || "Mail", label: "电子邮箱", visible: true, custom: false }]
+            return [{ key: "email", value: basic.email, icon: basic.icons?.email || "Mail", label: "Email", visible: true, custom: false }]
                 .filter((item) => Boolean(item.value && item.visible));
         }
         return basic.fieldOrder
@@ -47,8 +47,8 @@ const BaseInfo = ({ basic = {} as BasicInfo, globalSettings, template }: BaseInf
         })) || []),
     ];
 
-    const nameField = basic.fieldOrder?.find((f) => f.key === "name") || { key: "name", label: "姓名", visible: true };
-    const titleField = basic.fieldOrder?.find((f) => f.key === "title") || { key: "title", label: "职位", visible: true };
+    const nameField = basic.fieldOrder?.find((f) => f.key === "name") || { key: "name", label: "Nama", visible: true };
+    const titleField = basic.fieldOrder?.find((f) => f.key === "title") || { key: "title", label: "Posisi", visible: true };
 
     const PhotoComponent = basic.photo && basic.photoConfig?.visible && (
         <motion.div layout="position">
@@ -85,21 +85,22 @@ const BaseInfo = ({ basic = {} as BasicInfo, globalSettings, template }: BaseInf
                         const customFieldHref = item.custom && "href" in item && typeof item.href === "string" ? item.href : null;
 
                         return (
-                        <motion.div key={item.key} className="flex items-center whitespace-nowrap overflow-hidden text-baseFont">
-                            {useIconMode ? (
-                                <div className="flex items-center gap-1">
-                                    {getIcon(item.icon)}
-                                    {item.key === "email" ? <a href={`mailto:${item.value}`} className="underline">{item.value}</a> : customFieldHref ? <a href={customFieldHref} target="_blank" rel="noopener noreferrer" className="underline truncate">{item.value}</a> : <span>{item.value}</span>}
-                                </div>
-                            ) : (
-                                <div className="flex items-center gap-2 overflow-hidden">
-                                    {!item.custom && <span>{t(`basicPanel.basicFields.${item.key}`)}:</span>}
-                                    {item.custom && shouldShowCustomFieldLabelPrefix(item) && <span>{item.label}:</span>}
-                                    {customFieldHref ? <a href={customFieldHref} target="_blank" rel="noopener noreferrer" className="truncate underline" suppressHydrationWarning>{item.value}</a> : <span className="truncate" suppressHydrationWarning>{item.value}</span>}
-                                </div>
-                            )}
-                        </motion.div>
-                    )})}
+                            <motion.div key={item.key} className="flex items-center whitespace-nowrap overflow-hidden text-baseFont">
+                                {useIconMode ? (
+                                    <div className="flex items-center gap-1">
+                                        {getIcon(item.icon)}
+                                        {item.key === "email" ? <a href={`mailto:${item.value}`} className="underline">{item.value}</a> : customFieldHref ? <a href={customFieldHref} target="_blank" rel="noopener noreferrer" className="underline truncate">{item.value}</a> : <span>{item.value}</span>}
+                                    </div>
+                                ) : (
+                                    <div className="flex items-center gap-2 overflow-hidden">
+                                        {!item.custom && <span>{t(`basicPanel.basicFields.${item.key}`)}:</span>}
+                                        {item.custom && shouldShowCustomFieldLabelPrefix(item) && <span>{item.label}:</span>}
+                                        {customFieldHref ? <a href={customFieldHref} target="_blank" rel="noopener noreferrer" className="truncate underline" suppressHydrationWarning>{item.value}</a> : <span className="truncate" suppressHydrationWarning>{item.value}</span>}
+                                    </div>
+                                )}
+                            </motion.div>
+                        )
+                    })}
                 </motion.div>
             </div>
             {basic.githubContributionsVisible && (

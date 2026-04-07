@@ -2,8 +2,9 @@ import { ResumeTemplate } from "@/types/template";
 
 export const creativeConfig: ResumeTemplate = {
   id: "creative",
-  name: "创意模板",
-  description: "视觉错落设计，灵动活泼展现个性",
+  name: "Template Kreatif",
+  description:
+    "Desain visual dinamis, tampil lincah dan ceria menunjukkan kepribadian",
   thumbnail: "creative",
   layout: "creative",
   colorScheme: {
@@ -20,5 +21,12 @@ export const creativeConfig: ResumeTemplate = {
   basic: {
     layout: "left",
   },
-  availableSections: ["skills", "experience", "projects", "education", "selfEvaluation", "certificates"],
+  availableSections: [
+    "skills",
+    "experience",
+    "projects",
+    "education",
+    "selfEvaluation",
+    "certificates",
+  ],
 };

@@ -2,8 +2,9 @@ import { ResumeTemplate } from "@/types/template";
 
 export const classicConfig: ResumeTemplate = {
   id: "classic",
-  name: "经典模板",
-  description: "传统简约的简历布局，适合大多数求职场景",
+  name: "Template Klasik",
+  description:
+    "Layout resume tradisional dan minimalis, cocok untuk sebagian besar skenario pencarian kerja",
   thumbnail: "classic",
   layout: "classic",
   colorScheme: {
@@ -20,5 +21,12 @@ export const classicConfig: ResumeTemplate = {
   basic: {
     layout: "left",
   },
-  availableSections: ["skills", "experience", "projects", "education", "selfEvaluation", "certificates"],
+  availableSections: [
+    "skills",
+    "experience",
+    "projects",
+    "education",
+    "selfEvaluation",
+    "certificates",
+  ],
 };
