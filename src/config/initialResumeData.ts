@@ -155,6 +155,39 @@ export const initialResumeState = {
   draggingEducationId: null,
   draggingExperienceId: null,
   draggingProjectIdForExperience: null,
+  menuSections: [
+    { id: "basic", title: "Data Diri", icon: "👤", enabled: true, order: 0 },
+    { id: "skills", title: "Keahlian", icon: "⚡", enabled: true, order: 1 },
+    {
+      id: "experience",
+      title: "Pengalaman Kerja",
+      icon: "💼",
+      enabled: true,
+      order: 2,
+    },
+    { id: "projects", title: "Proyek", icon: "🚀", enabled: true, order: 3 },
+    {
+      id: "education",
+      title: "Pendidikan",
+      icon: "🎓",
+      enabled: true,
+      order: 4,
+    },
+    {
+      id: "certificates",
+      title: "Sertifikat",
+      icon: "📜",
+      enabled: true,
+      order: 5,
+    },
+    {
+      id: "selfEvaluation",
+      title: "Evaluasi Diri",
+      icon: "📝",
+      enabled: true,
+      order: 6,
+    },
+  ],
 };
 
 export const createEmptyResume = (): ResumeData => {
@@ -183,6 +216,39 @@ export const initialResumeStateEn = {
       },
     ],
   },
+  menuSections: [
+    { id: "basic", title: "Profile", icon: "👤", enabled: true, order: 0 },
+    { id: "skills", title: "Skills", icon: "⚡", enabled: true, order: 1 },
+    {
+      id: "experience",
+      title: "Experience",
+      icon: "💼",
+      enabled: true,
+      order: 2,
+    },
+    { id: "projects", title: "Projects", icon: "🚀", enabled: true, order: 3 },
+    {
+      id: "education",
+      title: "Education",
+      icon: "🎓",
+      enabled: true,
+      order: 4,
+    },
+    {
+      id: "certificates",
+      title: "Certificates",
+      icon: "📜",
+      enabled: true,
+      order: 5,
+    },
+    {
+      id: "selfEvaluation",
+      title: "Self Evaluation",
+      icon: "📝",
+      enabled: true,
+      order: 6,
+    },
+  ],
 };
 
 // Blank template (Indonesian)
@@ -205,6 +271,7 @@ export const blankResumeState = {
   certificates: [],
   skillContent: "",
   selfEvaluationContent: "",
+  menuSections: [initialResumeState.menuSections[0]],
 };
 
 // Blank template (English)
@@ -221,4 +288,5 @@ export const blankResumeStateEn = {
     birthDate: "",
     customFields: [],
   },
+  menuSections: [initialResumeStateEn.menuSections[0]],
 };
