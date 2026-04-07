@@ -137,7 +137,7 @@ export const initialResumeState = {
       linkLabel: "",
       description: `<ul>
         <li>Membangun sistem monitoring performa real-time, mengumpulkan dan menganalisis metrik performa halaman</li>
-        <li>Menerapkan采集 otomatis berbagai metrik performa: FCP, LCP, CLS, FID, TTI</li>
+        <li>Menerapkan pengumpulan otomatis berbagai metrik performa: FCP, LCP, CLS, FID, TTI</li>
         <li>Mendesain dashboard visualisasi data, membantu tim memahami status performa project</li>
         <li>Berdasarkan data monitoring, mengusulkan dan mengimplementasi berbagai strategi optimasi</li>
         <li>Menulis berbagai technical document dan best practices, membangun knowledge base tim</li>
