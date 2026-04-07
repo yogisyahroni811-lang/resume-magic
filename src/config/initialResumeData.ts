@@ -160,3 +160,65 @@ export const initialResumeState = {
 export const createEmptyResume = (): ResumeData => {
   return JSON.parse(JSON.stringify(initialResumeState)) as ResumeData;
 };
+
+// English version for i18n
+export const initialResumeStateEn = {
+  ...initialResumeState,
+  title: "New Resume",
+  basic: {
+    ...initialResumeState.basic,
+    name: "John Doe",
+    title: "Senior Frontend Engineer",
+    employementStatus: "Actively Looking",
+    email: "john@example.com",
+    phone: "+1 234 567 8900",
+    location: "San Francisco, CA",
+    birthDate: "1995-06",
+    customFields: [
+      {
+        id: "personal",
+        label: "Portfolio",
+        value: "https://john.dev",
+        icon: "Globe",
+      },
+    ],
+  },
+};
+
+// Blank template (Indonesian)
+export const blankResumeState = {
+  ...initialResumeState,
+  title: "Resume Kosong",
+  basic: {
+    ...initialResumeState.basic,
+    name: "",
+    title: "",
+    email: "",
+    phone: "",
+    location: "",
+    birthDate: "",
+    customFields: [],
+  },
+  education: [],
+  experience: [],
+  projects: [],
+  certificates: [],
+  skillContent: "",
+  selfEvaluationContent: "",
+};
+
+// Blank template (English)
+export const blankResumeStateEn = {
+  ...blankResumeState,
+  title: "Blank Resume",
+  basic: {
+    ...blankResumeState.basic,
+    name: "",
+    title: "",
+    email: "",
+    phone: "",
+    location: "",
+    birthDate: "",
+    customFields: [],
+  },
+};
