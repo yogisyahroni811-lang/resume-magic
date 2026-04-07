@@ -2,20 +2,9 @@ name: Docker Image CI/CD
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   release:
     types: [created]
-
-# Workflow disabled - deploy to Vercel instead
-# Uncomment and set DOCKERHUB_USERNAME + DOCKERHUB_TOKEN secrets to re-enable
-#
-# on:
-#   push:
-#     branches: [ "main" ]
-#   release:
-#     types: [created]
-
-on: {}
 
 env:
   REGISTRY: docker.io
